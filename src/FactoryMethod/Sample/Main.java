@@ -4,9 +4,9 @@ import idcard.*;
 public class Main {
     public static void main(String[] args) {
         Factory factory = new IDCardFactory();
-        Product card1 = factory.create("È«±æµ¿");
-        Product card2 = factory.create("ÀÌ¼ø½Å");
-        Product card3 = factory.create("°­°¨Âù");
+        Product card1 = factory.create("í™ê¸¸ë™");
+        Product card2 = factory.create("ì´ìˆœì‹ ");
+        Product card3 = factory.create("ê°•ê°ì°¬");
         card1.use();
         card2.use();
         card3.use();
