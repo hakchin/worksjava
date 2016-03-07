@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<?xml-stylesheet type="text/xsl" href="movie_3.xsl" ?>
+<다른곳으로연결>
+  <가고자하는곳>영화 인물 목록</가고자하는곳>
+  <가는곳의주소>movie_2.xml</가는곳의주소>
+</다른곳으로연결>

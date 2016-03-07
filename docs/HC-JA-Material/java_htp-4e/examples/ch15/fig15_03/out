@@ -1,0 +1,12 @@
+Name: thread1;  sleep: 4226
+Name: thread2;  sleep: 1796
+Name: thread3;  sleep: 3168
+Name: thread4;  sleep: 3053
+
+Starting threads
+Threads started
+
+thread2 done sleeping. Terminating thread.
+thread4 done sleeping. Terminating thread.
+thread3 done sleeping. Terminating thread.
+thread1 done sleeping. Terminating thread.

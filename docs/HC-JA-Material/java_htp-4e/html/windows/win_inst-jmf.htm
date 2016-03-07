@@ -1,0 +1,188 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>Java&#153; Media Framework - Installer Info</title>
+   <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body text="#000000" bgcolor="#FCF0BC" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h1>Java&#153; Media Framework <br><font size="+1">for Windows Installation</font></h1>
+
+<p>Read the following documentation before you <a href="#install">install</a> Java&#153; Media Framework from the CD.
+
+<p>Have you reviewed the Java&#153; Media Framework <a href="la-jmf.htm">License Agreement</a>?
+
+<hr>
+
+<!--BODYCOPY Start-->
+
+<h3>To install the JMF Performance Pack for Windows</h3>
+
+<p>Run the executable by double-clicking on the <b>jmf-2_1-win.exe</b> which is located in the <b>software-win/framework/</b> 
+directory on the root level of this CD-ROM. Or you can click on the <b>Install Java&#153; Media Framework from the CD</b> 
+link at the bottom of this page. 
+
+<p><b>Please Reveiw the information on the page before you install the software.</b>
+
+<p><b>NOTE:</b> The Windows installation program automatically detects whether
+or not Netscape Communicator 4.03 or later is installed and then installs
+JMF for its use!
+
+<p>If you are using Netscape Communicator 4.04 or 4.05, then you must install
+the <a href="http://developer.netscape.com/software/jdk/download.html" target="new">JDKTM 1.1 patch for Netscape Communicator</a> before you can run any JMF applets.
+
+<p>Netscape Communicator 4.06 or greater already supports JDK 1.1 without the patch.
+
+<br><hr>
+
+<h3>Setting Up JMF</h3>
+
+<ol type="1" start="1.">
+	<li>Check the hardware and software requirements.<br><br>
+
+	<li>Uninstall JMF 2.1.1 Beta Release if it is installed on your system.<br><br>
+
+	<li>Run the installation program to extract JMF to a directory, such as <tt><b>C:\Program Files\JMF2.1.1</b></tt>.<br><br>
+
+	<li>Verify that your CLASSPATH and PATH have been configured properly. During installation, InstallShield should automatically set up your CLASSPATH and PATH.
+
+<dl>
+	<dd>set CLASSPATH=%WINDIR%\java\classes\jmf.jar;%WINDIR%\java\classes\sound.jar;.;%CLASSPATH%
+</dl>
+
+</ol>
+
+<dl>
+	<dd>Your PATH should be set to include the JMF library files:
+
+<dl>
+	<dd>set PATH=%WINDIR%\System32;%PATH%&nbsp;&nbsp;&nbsp; (on Windows NT)
+<br>set PATH=%WINDIR%\System;%PATH%&nbsp;&nbsp; (on Windows 95/98)
+</dl>
+</dl>
+
+<dl>
+	<dd>You can use the JMF Diagnostics applet to verify that JMF is set up properly on your system.
+</dl>
+
+<hr>
+
+<h3>Configuring JMF</h3>
+<p>JMF consists of a collection of media handlers, plugins and capture devices. They are configurable and extensible. To configure JMF, use the JMFRegistry application. See the JMF Registry User's Guide for details.
+
+<br><hr>
+
+<h3>Running JMF</h3>
+<p>You can run the samples using the JDK Applet Viewer, browsers (HotJava,
+Netscape Communicator, or Internet Explorer) and the JMStudio standalone applications.
+
+<br><hr>
+
+<h3>Running the RTP Applets and Applications</h3>
+<p>You can only play unicast and broadcast streams using RTPPlayerApplet. To play a multicast stream or to transmit, you need to use the application JMStudio. See the RTP release notes for more information.
+
+<br><hr>
+
+<h3>Running JMF with Netscape Communicator</h3>
+<p>JMF can be used with Netscape Communicator 4.06 or later.
+
+<p>If Netscape Communicator is already installed on your system when you install JMF, the JMF installation program (with your permission) sets up JMF to work with Netscape Communicator. If the installation program fails to detect Netscape Communicator during installation, there are two ways to get JMF to work with Communicator:
+
+<p>You can uninstall JMF 2.1.1 (from the Add/Remove Programs option in the Windows Control Panel) and then install both Netscape Communicator 4.06+ and JMF 2.1.1, in that order. (This is the easier option.)
+
+<p>Install Netscape Communicator and then copy the JMF shared libraries and classes to the Netscape directory.
+
+<p>From the %WINDIR%\Java\Classes directory:
+
+<dl>
+	<dd>Copy jmf.properties, soundbank.gm, jmf.jar and sound.jar to 
+		<dl>
+			<dd><tt><b>C:\Program Files\Netscape\Communicator\Program\Java\Classes</b></tt>
+		</dl>
+</dl>
+
+<p>From the %WINDIR%\System directory:
+
+<dl>
+	<dd>Copy jm*.dll and jsound.dll to 
+		<dl>
+			<dd><tt><b>C:\Program Files\Netscape\Communicator\Program\Java\Bin</b></tt>
+		</dl>
+</dl>
+
+<p><b>Note:</b> These instructions assume that Netscape Communicator was installed in
+<dl>
+	<dd><tt><b>C:\ProgramFiles\Netscape.</b></tt>
+</dl>
+
+<p>If that's not true, substitute the appropriate directories.
+
+<p>If a particular type of file doesn't work with Netscape, first check if the MIME type for this type of file is set correctly. By default, Netscape doesn't provide the settings for MIDI (audio/midi), RMF (audio/rmf), and GSM (audio/x-gsm) files. In Communicator, you can add and modify the MIME types from the Edit->Preferences menu, in Navigator/Applications category.
+
+<p><b>Note:</b> JMF requires access to several resources outside the normal Java sandbox. When Communicator brings up dialogs asking you to grant privileges to JMF applets, you should grant them. To avoid the repeated display of security dialogs, you might want to enable "Remember this decision" in the security dialog.
+
+<br><hr>
+
+<h3>Running JMF with Internet Explorer and the Microsoft VM</h3>
+<p>JMF will run on the latest Microsoft VM (5.0.0.3177 or greater) with JNI support. Internet Explorer 4.01 or greater is recommended. JMF also runs on Internet Explorer 3.02 if Java Plug-in is used.
+
+<br><hr>
+
+<h3>Running JMF with HotJava 1.1</h3>
+<p>HotJava 1.1 seems to ignore the CLASSPATH variable. If you want to use it with JMF, you'll need to explicitly tell HotJava to use your CLASSPATH. You can do that by invoking:
+
+<dl>
+	<dd>hotjava -classpath %CLASSPATH%
+</dl>
+
+<p>Also take a look at the runme.bat in the directory where you installed JMF.
+
+<br><hr>
+
+<h3>Running JMF with the JDK 1.2 Applet Viewer</h3>
+
+<p>With the default JDK 1.2 permissions, running JMF in appletviewer generates some runtime security exceptions. You can eliminate this problem by using a policy file to grant permissions to the JRE.&nbsp; A sample policy file is included, jmf-policy in the release. To use the policy file with appletviewer, invoke:
+
+<dl>
+	<dd>appletviewer -J-Djava.security.policy=file:&lt;policy file> &lt;URL>
+</dl>
+
+<p>For more information, see: <a href="http://java.sun.com/products/jdk/1.2/docs/guide/security/PolicyFiles.html" target="new">http://java.sun.com/products/jdk/1.2/docs/guide/security/PolicyFiles.html</a>
+
+<!--BODYCOPY End-->
+
+<br><hr>
+
+
+<p><a href="../../software-win/framework/jmf-2_1_1-win.exe" name="install">Install Java&#153; Media Framework from the CD</a>
+
+<p><b>IMPORTANT:</b> When prompted by your browser please choose 'Run this program from its current location', click 'OK' and follow the instructions as they appear on screen.
+
+<p>It is also possible to install the software directly from the CD. The installer (<b>jmf-2_1_1-win.exe</b>) is located in the <b>software-win/framework/</b> directory on the root level of this CD-ROM.
+
+<dl>
+	<dt>For the latest information on Java&#153; Media Framework please visit... 
+		<dd><a href="http://java.sun.com/products/java-media/jmf/" target="new">http://java.sun.com/products/java-media/jmf/</a>
+</dl>
+
+<br><hr>
+
+<h3>Additional Java&#153; Media Framework Information</h3>
+
+<p><b>Online Java&#153; Media Framework API Guide:</b><br>
+The online Java&#153; Media Framework API Guide is located at <br><a href="http://java.sun.com/products/java-media/jmf/2.1.1/guide/JMFTOC.html" target="info">http://java.sun.com/products/java-media/jmf/2.1.1/guide/JMFTOC.html</a>.
+
+<hr WIDTH="100%">
+
+<p align="center"><font size="-1"><a href="win_install-main.htm">Back to Software Installation</a></font></p>
+
+<p>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,8 @@
+Point constructor: Center = [72, 29]; Radius = 0.0
+Circle constructor: Center = [72, 29]; Radius = 4.5
+Point constructor: Center = [5, 5]; Radius = 0.0
+Circle constructor: Center = [5, 5]; Radius = 10.0
+Circle finalizer: Center = [72, 29]; Radius = 4.5
+Point finalizer: Center = [72, 29]; Radius = 4.5
+Circle finalizer: Center = [5, 5]; Radius = 10.0
+Point finalizer: Center = [5, 5]; Radius = 10.0

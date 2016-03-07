@@ -1,0 +1,103 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>Java&#153; Media Framework - Installer Info</title>
+   <link rel="stylesheet" type="text/css" href="../style.css">
+   <script language="JavaScript" src="../popup.js"></script>
+</head>
+
+<body text="#000000" bgcolor="#FCF0BC" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h1>Java&#153; Media Framework <br><font size="+1">for Linux Installation</font></h1>
+
+<p>Read the following documentation before you <a href="#install">install</a> Java&#153; Media Framework from the CD.
+
+<p>Have you reviewed the Java&#153; Media Framework <a href="la-jmf.htm">License Agreement</a>?
+
+<hr>
+
+<!--BODYCOPY Start-->
+
+<h3>Requirements</h3>
+
+<p><a href="http://www.blackdown.org/java-linux/jdk1.2-status/jdk1.3-status.html" target="new">Blackdown</a>
+or <a href="http://java.sun.com/j2se/1.3/download-linux.html" target="new">Sun</a> Java2
+Standard Edition SDK or Runtime Environment v1.3.0 or higher for Linux/i386</li>
+
+<br><hr>
+<a href name="install"></a>
+<h3>Installation</h3>
+<p>You only have to install one of the following packages, both files are located in the <b>software-lin\framework</b> directory on the root level of this CD-ROM.
+
+<ul>
+	<li><b>Standard package: <tt>jmf-2.1.1-fcs-linux-i386.tar.bz2</tt></b></li>
+	<p>Download <tt><b>jmf-2.1.1-fcs-linux-i386.tar.bz2</b></tt> from the CD to your hard drive using your favorite graphical or command line tool, then follow the instructions below.
+
+	<p><b>Installation:</b>
+		<tt><b><dl>
+			<dd>% cd &lt;targetdirectory>
+				<dd>% bzip2 -dc &lt;downloadpath&gt;/jmf-2.1.1-fcs-linux-i386.tar.bz2 | tar xvf -
+			<dd>% export PATH=&lt;targetdirectory&gt;/jmf-2.1.1/bin:$PATH
+			<dd>% export CLASSPATH=&lt;targetdirectory&gt;/jmf-2.1.1/lib/jmf.jar:&lt;targetdirectory&gt;/jmf-2.1.1/lib/sound.jar:&lt;targetdirectory&gt;/jmf-2.1.1/lib/mediaplayer.jar:&lt;targetdirectory&gt;/jmf-2.1.1/lib/multiplayer.jar:&lt;targetdirectory&gt;/jmf-2.1.1/lib:$CLASSPATH
+			<dd>% export LD_LIBRARY_PATH=&lt;targetdirectory&gt;/jmf-2.1.1/lib:$LD_LIBRARY_PATH
+		</dl></b></tt>
+
+<br clear="all">
+
+	<li><b>Java2 Extension package: <tt>jmf-for-java2-2.1.1-fcs-linux-i386.tar.bz2</tt></b></li>
+
+	<p>Download <tt><b>jmf-for-java2-2.1.1-fcs-linux-i386.tar.bz2</b></tt>  from the CD to your hard drive using your favorite graphical or command line tool, then follow the instructions below.
+		<ul>
+			<li><b><i>Installation with a J2SDK 1.3:</i></b></li>
+
+				<tt><b><dl>
+					<dd>% cd &lt;j2sdk1.3.0 installation>/jre
+					<dd>% bzip2 -dc &lt;downloadpath&gt;/jmf-for-java2-2.1.1-fcs-linux-i386.tar.bz2 | tar xvf -
+					<dd>% export PATH=&lt;j2sdk1.3.0 installation&gt;/jre/bin:$PATH
+				</dl></b></tt>
+
+			<li><b><i>Installation with a J2RE 1.3:</i></b></li>
+
+				<tt><b><dl>
+					<dd>% cd &lt;j2re1.3.0 installation>
+					<dd>% bzip2 -dc &lt;downloadpath&gt;/jmf-for-java2-2.1.1-fcs-linux-i386.tar.bz2 | tar xvf-
+				</dl></b></tt>
+		</ul>
+</ul>
+
+<br><h3>Data Integrity Error</h3>
+<p>If you are extracting the archive using the command prompt and receive an error that states '<b>Data integrity error when decompressing</b>,' please do one of the following:
+
+<ol type="1" start="1.">
+	<li>Check the directory location where you were expanding the archive. The expanded directory may be intact.<br><br>
+	<li>Use a GUI archive utility such as '<a href="javascript:openWindow('ark.htm')">ark</a>' to expand the archive.
+</ol>
+
+<!--BODYCOPY End-->
+
+<br><hr>
+
+<h3>Additional Java&#153; Media Framework Information</h3>
+
+<p><b>Online Java&#153; Media Framework API Guide:</b><br>
+The online Java&#153; Media Framework API Guide is located at <br><a href="http://java.sun.com/products/java-media/jmf/2.1.1/guide/JMFTOC.html" target="info">http://java.sun.com/products/java-media/jmf/2.1.1/guide/JMFTOC.html</a>.
+
+<dl>
+	<dt>For the latest information on Java&#153; Media Framework please visit... 
+		<dd><a href="http://java.sun.com/products/java-media/jmf/" target="new">http://java.sun.com/products/java-media/jmf/</a>
+</dl>
+
+
+<hr WIDTH="100%">
+
+<p align="center"><font size="-1"><a href="lin_install-main.htm">Back to Software Installation</a></font></p>
+
+<p>
+
+</body>
+</html>
+
+
+

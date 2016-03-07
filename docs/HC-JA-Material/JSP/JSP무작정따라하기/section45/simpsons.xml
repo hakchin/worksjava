@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<?xml-stylesheet type="text/xsl" href="Simpsons.xsl" ?>
+<우리집>
+<!--우리가족 이름-->
+  <우리가족>
+    <아빠>호머심슨</아빠>
+    <엄마>마지심슨</엄마>
+    <동생>리사심슨</동생> 
+    <나>바트심슨</나>
+  </우리가족>
+</우리집>

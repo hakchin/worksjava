@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<attributes version="1.0">
+   <fileobject name="SendingThread.java">
+      <attr name="class_dependency_com.deitel.messenger.sockets.SocketMessengerConstants" stringvalue="SendingThread"/>
+      <attr name="class_dependency_java.lang.Thread" stringvalue="SendingThread"/>
+   </fileobject>
+   <fileobject name="DeitelMessenger.java">
+      <attr name="class_dependency_javax.swing.JPanel" stringvalue="WebBrowser"/>
+      <attr name="class_dependency_javax.swing.JToolBar" stringvalue="JToolBarDemo"/>
+      <attr name="class_dependency_javax.swing.JFrame" stringvalue="Application"/>
+   </fileobject>
+   <fileobject name="SocketMessageManager.java">
+      <attr name="class_dependency_com.deitel.messenger.MessageManager" stringvalue="SocketMessageManager"/>
+      <attr name="class_dependency_javax.swing.JPanel" stringvalue="WebBrowser"/>
+      <attr name="class_dependency_com.deitel.jhtp4.networking.messenger.MessageListener" stringvalue="MessageManager"/>
+      <attr name="class_dependency_com.deitel.jhtp4.networking.messenger.MessageManager" stringvalue="SocketMessageManager"/>
+      <attr name="class_dependency_com.deitel.messenger.sockets.SocketMessengerConstants" stringvalue="SocketMessageManager"/>
+      <attr name="class_dependency_com.deitel.jhtp4.networking.messenger.client.MessageManager" stringvalue="SocketMessageManager"/>
+      <attr name="class_dependency_javax.swing.JEditorPane" stringvalue="WebBrowserPane;WebBroswerPane;WebBrowser"/>
+      <attr name="class_dependency_javax.swing.JFrame" stringvalue="Application_1;Application"/>
+   </fileobject>
+   <fileobject name="PacketReceivingThread.java">
+      <attr name="class_dependency_com.deitel.messenger.sockets.SocketMessengerConstants" stringvalue="PacketReceivingThread"/>
+      <attr name="class_dependency_java.lang.Thread" stringvalue="PacketReceivingThread"/>
+   </fileobject>
+</attributes>

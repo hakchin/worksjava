@@ -1,0 +1,117 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>Java&#153; 2 SDK, Standard Edition v 1.3.1 - Bug Info</title>
+   <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body text="#000000" bgcolor="#FCF0BC" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<div align="center">
+<table cellpadding="5" cellspacing="0" border="0" width="95%">
+	<tr valign="top" bgcolor="#84C8BF">
+		<td align="right" width="25%"><font color="#FFFFFF"><b>Bug Id: </b></font></td>
+		<td><font color="#FFFFFF">4358142</font></td>
+	</tr>
+	<tr valign="top" bgcolor="#CCE8E4">
+		<td align="right"><b>Synopsis: </b></td>
+		<td>Mime-types not loaded properly on Netscape - intermittent bug</td>
+	</tr>
+	<tr valign="top" bgcolor="#84C8BF">
+		<td align=right><font color="#FFFFFF"><b>Category:</b></font></td>
+		<td><font color="#FFFFFF">javaplugin:solaris</font></td>
+	</tr>
+	<tr valign="top" bgcolor="#CCE8E4">
+		<td align=right><b>Reported Against:</b></td>
+		<td>kest-sol-rc1</td>
+	</tr>
+	<tr valign="top" bgcolor="#84C8BF">
+		<td align=right><font color="#FFFFFF"><b><nobr>Release Fixed State:</nobr></font></b></td>
+		<td align=left><font color="#FFFFFF">Closed, will not be fixed</font></td>
+	</tr>
+	<tr valign="top" bgcolor="#CCE8E4">
+		<td align=right><b>Related Bugs:</b></td>
+		<td>&nbsp<br></td>
+	</tr>
+	<tr valign="top" bgcolor="#84C8BF">
+		<td align=right><font color="#FFFFFF"><b>Submit Date:</b></font></td>
+		<td align=left><font color="#FFFFFF">Jul 31, 2000</font></td>
+	</tr>
+	<tr valign="top" bgcolor="#CCE8E4">
+		<td align=right><b>Description:</b></td>
+		<td>
+<pre>
+Version of Java:
+java version &quot;1.3.0&quot;
+Java(TM) 2 Runtime Environment, Standard Edition (build 1.3.0-b24)
+Java HotSpot(TM) Client VM (build 1.3.0-b24, mixed mode)
+
+System Information:
+SunOS deepesh 5.7 Generic_106541-10 sun4u sparc SUNW,Ultra-5_10
+
+Processor Information:
+Status of processor 0 as of: 07/31/00 18:05:50
+  Processor has been on-line since 07/17/00 20:41:07.
+  The sparcv9 processor operates at 440 MHz,
+        and has a sparcv9 floating point processor.
+
+STEPS TO REPRODUCE:
+- Install build 24 of Kestrel/Solaris on your host solaris machine
+  for sparc
+ 
+/net/hotvm.eng/export/sail1/jdk1.3_b24/production-1.3-b24/pkgarchive/sparc/b24
+  for x86
+  /net/hotvm-x.eng/builds/jdk1.3_b24/production-1.3-b24/pkgarchive/i386/b24
+
+- Set the environment variable NPX_PLUGIN_PATH
+  for sparc
+  % setenv NPX_PLUGIN_PATH &quot;path to build24 jre&quot;/plugin/sparc
+  for x86
+  % setenv NPX_PLUGIN_PATH &quot;path to build24 jre&quot;/plugin/i386
+
+- Start netscape, select &quot;About Plug-ins&quot; from the &quot;Help&quot; menu.
+
+RESULTS:
+Since this is an intermittent failure, sometimes we see only a few mime-types
+enabled in the plugin table for &quot;Java(TM) Plug-in 1.3.0-b24&quot;. All the
+mime-types
+should have been enabled.
+The problem has been noticed in both sparc and x86 solaris 6, 7 &amp; 8. Generally
+mime-type 1.3, 1.2.2, 1.2.1 and 1.1.3 will be enabled whereas mime-type 1.2,
+1.1.2, 1.1.1 and 1.1 will not be enabled.
+</pre>
+		</td>
+	</tr>
+	<tr valign="top" bgcolor="#84C8BF">
+		<td align=right><font color="#FFFFFF"><b>Workaround:</b></font></td>
+		<td align=left><font color="#FFFFFF">Exiting the browsers and rerunning it is one solution.</font></td>
+	</tr>
+	<tr valign="top" bgcolor="#CCE8E4">
+		<td align=right><b>Evaluation:</b></td>
+		<td align=left>
+<p>Committed to 1.3.1.
+
+<p>This is a Netscape bug/issue.
+
+<p>At best we could probably work around it to the point where an individual user
+wouldn't have to restart, if they installed there own copy of netscape.  A user
+using a common install would still have the problem.  This amounts to a
+non-trival amount of work for very little gain.  As such I think we should just
+live with this, or pressure Netscape to fix the actual probelm.
+xxxxx@xxxxx 2000-11-27
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">The information on this page is from... 
+		<br><a href="http://developer.java.sun.com/developer/bugParade/bugs/4358142.html" target="new">http://developer.java.sun.com/developer/bugParade/bugs/4358142.html</a>, 
+		<br>you must be a registered member of the Java Developer Connection, to view the Bug Database. Membership is free click on the link above to join.</td>
+</table>
+</div>
+
+</body>
+</html>
+
+
+

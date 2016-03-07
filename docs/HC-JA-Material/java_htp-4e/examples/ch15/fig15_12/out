@@ -1,0 +1,25 @@
+ProduceInteger setting sharedInt to 1
+ConsumeInteger retrieving sharedInt value 1
+ProduceInteger setting sharedInt to 2
+ConsumeInteger retrieving sharedInt value 2
+ProduceInteger setting sharedInt to 3
+ConsumeInteger retrieving sharedInt value 3
+ProduceInteger setting sharedInt to 4
+ConsumeInteger retrieving sharedInt value 4
+ProduceInteger setting sharedInt to 5
+ConsumeInteger retrieving sharedInt value 5
+ProduceInteger setting sharedInt to 6
+ConsumeInteger retrieving sharedInt value 6
+ProduceInteger setting sharedInt to 7
+ConsumeInteger retrieving sharedInt value 7
+ProduceInteger setting sharedInt to 8
+ConsumeInteger retrieving sharedInt value 8
+ProduceInteger setting sharedInt to 9
+ConsumeInteger retrieving sharedInt value 9
+ProduceInteger setting sharedInt to 10
+ProduceInteger setting moreData to false
+ProduceInteger finished producing values
+Terminating ProduceInteger
+ConsumeInteger retrieving sharedInt value 10
+ConsumeInteger retrieved values totaling: 55
+Terminating ConsumeInteger

@@ -1,0 +1,420 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>Forte&#153; for Java&#153; Release 2.0 - Installer Info</title>
+   <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body text="#000000" bgcolor="#FCF0BC" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h1>Forte&#153; for Java&#153; Release 2.0<br><font size="+1">for Linux Installation</font></h1>
+
+<p>Read the following documentation before you <a href="#install">install</a> Forte&#153; for Java&#153; Release 2.0 from the CD.
+
+<p>Have you reviewed the Forte&#153; for Java&#153; Release 2.0 <a href="la-forte.htm">License Agreement</a>?
+
+<p>You must have Java&#153; 2 SDK, Standard Edition, v. 1.3 installed on your system in order to install and run Forte for Java.
+
+<hr>
+
+<!--BODYCOPY Start-->
+
+<h3>Java Documentation:</h3>
+
+<dl>
+	<dt>The Java 2 SDK documentation can be downloaded as a zip file for Linux at:
+		<dd><a href="http://java.sun.com/j2se/1.3/docs.html" target="new">http://java.sun.com/j2se/1.3/docs.html</a>
+</dl>
+
+<dl>
+	<dt>The installation instructions for the documentation may be found at:
+		<dd><a href="http://java.sun.com/j2se/1.3/install-docs.html" target="new">http://java.sun.com/j2se/1.3/install-docs.html</a>
+</dl>
+
+<p>If you want access to the Java 2 SDK documentation from inside Forte for Java, download, install and mount this documentation as a filesystem in the IDE.
+
+<p>To mount the Java documentation as a filesystem within Forte for Java,
+<br>(after installing Forte for Java):
+
+<ol type="1" start="1.">
+	<li>Open the Forte for Java Explorer window: <b>View > Explorer</b>.<br><br>
+	<li>Click the <b>Javadoc</b> tab at the bottom of the Explorer window.<br><br>
+	<li>Right-click the <b>Javadoc</b> node within the Explorer window.<br><br>
+	<li>Select <b>Mount Directory</b> from the pop-up menu.<br><br>
+	<li>Browse to the directory where you installed the documentation.
+		<br>&nbsp; &nbsp; &nbsp; <tt><b>C:/jdk1.3/docs</b></tt><br>
+	and highlight it by a single-click.<br><br>
+	<li>Click <b>Mount</b>.
+</ol>
+
+<p>The documentation will now be accessible from within the IDE via the Javadoc tab in the Explorer window.
+
+<br><hr>
+
+<a name="install"></a>
+<h3>Installation as Single User for Linux Red Hat 6.2 and other Linux Platforms</h3>
+
+<p>The files for installing Forte&#153; for Java&#153; are located in the <b>software-lin\forte</b> directory on the root level of this CD-ROM. 
+
+<p>1. Download the file, from the CD to a directory on your personal computer:
+
+	<dl>
+		<dd><tt><b>forte_ce_2.sh</b></tt>
+	</dl>
+
+<p>2. Change your working directory to this directory.
+
+<p>3. Launch the installation (as a non-root user) by executing this file:
+
+	<dl>
+		<dd><tt><b>$ sh ./forte_ce_2.sh</b></tt>
+	</dl>
+
+<p>4. The installation program will verify that a compatible Java Virtual Machine is installed.
+
+	<dl>
+		<dd>then click <b>Next</b>
+		<p><b>Note:</b> If the installation program does not find a compatible JVM, a menu will appear prompting you for one of two actions:
+		<p> Select <b>0</b> to specify a path to your JVM.
+		<br>Select <b>1</b> to terminate the installation.
+	</dl>
+
+<p>5. The message: <i>Extracting Installation class</i> appears for a moment before the <b>Welcome</b> screen is launched.
+	
+	<dl>
+		<dd>Select <b>Next</b> from the <b>Welcome</b> screen to continue Installation.
+	</dl>
+
+<p>6. The <b>Readme</b> screen appears.
+	<dl>
+		<dd>Read this document, then select <b>Next</b>.
+	</dl>
+
+<p>7. The License Agreement appears. After reviewing the agreement,
+
+	<dl>
+		<dd>select <b>Agree</b> radio button
+		<dd>click <b>Next</b> to continue installing Forte forJava.
+	</dl>
+
+<p>8. A list of installed Java Virtual machines is displayed.
+
+	<dl>
+		<dd>Select <b>JDK 1.3</b> and click <b>Next</b>.
+	</dl>
+
+<p>9. Select the default installation directory.
+
+<p>10. Click <b>Install Now</b>.
+
+<p>11. After the files are installed, the <b>Installation Summary</b> window appears.
+
+	<dl>
+		<dd>After reviewing the summary, click <b>Exit</b>.
+	</dl>
+
+<p>12A. Launch Forte for Java:
+	<dl>
+		<dd><tt><b>$ /forte4j/bin/runide.sh</b></tt>
+		<p><b>Note:</b> runide.sh ignores the value of the CLASSPATH environment variable.
+This affects access to databases from Forte for Java. If you run Forte
+for Java without the CLASSPATH variable, you will have to manually add
+database drive files to
+		<dd><tt><b>&lt;FFJ_HOME>/libext.</b></tt>
+	</dl>
+
+<p>12B. You may launch Forte for Java from the command line with the CLASSPATH variable (using the -cp switch):
+	<dl>
+		<dd><tt><b>$ runide.sh -cp${CLASSPATH}</b></tt>
+	</dl>
+
+<br><hr>
+
+<h3>Uninstalling Forte for Java</h3>
+
+<p>1. Run the installer program.
+<p>2. Bring up the <b>File Deletion Confirmation</b> window.
+<p>3. Click <b>OK</b> to uninstall Forte for Java.
+
+<br><hr>
+
+<h3>Installation as Single User via Java .class file</h3>
+
+<p>1. Save the Java .class file from the CD to a directory on your personal computer. 
+	<dl>
+		<dd>It is located in the <b>software-lin\forte</b> directory on the root level of this CD-ROM. 
+	</dl>
+
+<p>2. Change your working directory to the directory where the Java .class file is located.
+
+	<dl>
+		<dd><b>Note:</b> If you have a CLASSPATH set, and it does not include the current directory, add the current directory to your existing CLASSPATH.
+		<p>If you do not have a CLASSPATH set, skip the next step.
+		<p>(To check whether you have a CLASSPATH currently set, type <b>set</b> at a command prompt. If you see CLASSPATH listed, you have a CLASSPATH setting.)
+	</dl>
+
+<p>3A. To add the current directory to your CLASSPATH in a Bourne shell (which typically gives a $ prompt), type:
+
+	<dl>
+		<dd><tt><b>$ CLASSPATH=.:$CLASSPATH; export CLASSPATH</b></tt>
+	</dl>
+
+<p>3B. To add the current directory to your CLASSPATH in a C-shell (which typically gives a % or > prompt), type:
+
+	<dl>
+		<dd><tt><b>% setenv CLASSPATH .:$CLASSPATH</b></tt>
+	</dl>
+
+<p>4. Type the following command (without the .class extension):
+
+	<dl>
+		<dd><tt><b>java forte_ce_2</b></tt>
+	<p><b>Note:</b> This assumes that you have JDK 1.3 in your path. If you do not, you must specify the full path to the Java Interpreter executable:
+		<dd><tt><b>&lt;full_path_to_java_interpreter&gt; forte_ce_2</b></tt>
+	<p>This initiates the installation routine.
+
+	</dl>
+
+<p>5. Work through the dialog boxes to complete the installation.
+
+<p>6. Once complete, use the <tt><b>runide</b></tt> script in your installation directory to launch Forte for Java.
+
+<p>7A. You may launch Forte for Java from the command line:
+	<dl>
+		<dd><tt><b>$ runide.sh</b></tt>
+		<p><b>Note:</b> runide.exe ignores the value of the CLASSPATH environment variable. This affects access to databases from Forte for Java. If you run Forte for Java without the CLASSPATH variable, you will have to manually add database drive files to
+		<dd><tt><b>&lt;FFJ_HOME&gt;/libext.</b></tt>
+	</dl>
+
+<p>7B. You may launch Forte for Java from the command line with the CLASSPATH variable (using the -cp switch):
+
+	<dl>
+		<dd><tt><b>$ runide.sh -cp${CLASSPATH}</b></tt>
+	</dl>
+
+<br><hr>
+
+<h3>Uninstalling Preceeding Forte for Java</h3>
+<p>1. Run the uninstall.class located in /forte4j.
+
+<p>2. Follow the dialog boxes to complete the uninstall.
+
+<br><hr>
+
+<h3>Installation as Root of ForteCE-FCS Forte for Java</h3>
+
+<p>1. Set JAVA_PATH variable to the Java home directory.
+<p>2. Login as super-user
+	<dl>
+		<dd><tt><b>$ su</b></tt>
+		<dd><tt><b>#</b></tt>
+	</dl>
+
+<p>3. Install RPM files (as super-user)
+	<dl>
+		<dd><tt><b># rpm -i ForteCE-FCS-2[1].noarch.rpm</b></tt>
+	</dl>
+
+<p>4.&nbsp; Logout as Super-User
+	<dl>
+		<dd><tt><b># exit</b></tt>
+		<dd><tt><b>$</b></tt>
+	</dl>
+
+<p>5. Launch Forte for Java
+	<dl>
+		<dd><tt><b>$ ./runide</b></tt>
+	</dl>
+
+<br><hr>
+
+<h3>Mounting a JAR or ZIP file as a Javadoc filesystems in the IDE</h3>
+<p>To mount a JAR or ZIP file (without running unzip or jar commands) as a Javadoc filesystem:
+
+<p>1. Open the Explorer window in the IDE.
+
+<p>2. Click the <b>Javadoc</b> tab on the bottom of the Explorer window.
+
+<p>3. Right-click the Javadoc node and select <b>Mount JAR</b>.
+
+<p>4. Browse to the <b>JAR</b> or <b>ZIP</b> file and select it by a single-click.
+
+<p>5. Click <b>Mount</b>.
+<p>&nbsp;&nbsp;&nbsp;&nbsp; If the IDE does not find Javadoc index files, you will be asked if you wish to continue.
+
+<p>6.&nbsp; Click <b>Yes</b> to continue.
+<dl>
+	<dd>The documentation will now be available via the <b>Javadoc</b> tab.
+</dl>
+
+<br><hr>
+
+<h3>Deleting a Project through the Operating System</h3>
+
+<p>1.&nbsp; In the IDE's installation directory, navigate to the system/project delete the directory that has the project you want to delete.
+
+<p>2.&nbsp; Delete the project.last file in the system directory.
+
+<p><b>WARNING</b>: If you use this method while the IDE is running, you risk deleting the currently opened project.
+
+<br><hr>
+
+<h3>Deleting a Project through the IDE</h3>
+
+<p>1. Choose <b>Project | Settings</b> from the main window.
+
+<p>2. In the <b>Project | Settings</b> window,
+<dl>
+	<dd>expand the <b>Filesystems Settings</b> node.<br><br>
+	<dd>Choose the <b>Default System</b> node.
+</dl>
+
+
+<p>3. Set the <b>Hidden</b> property to <b>False</b>.
+<dl>
+	<dd>The <b>Default System</b> filesystem will be displayed in the Explorer.
+</dl>
+
+<p>4.&nbsp; In the Explorer:
+<dl>
+	<dd>expand the <b>Default System</b> node<br><br>
+	<dd>expand the <b>Projects</b> node<br><br>
+	<dd>select the project you want to delete.
+</dl>
+
+<p>5. Under <b>Default System / Projects</b>
+<dl>
+	<dd>right-click the project you want to delete.
+</dl>
+
+<p>6.&nbsp; Choose <b>Delete</b> from the contextual menu.
+<dl>
+	<dd>The default project cannot be deleted.
+</dl>
+
+<p>7.&nbsp; In the Project Settings window
+<dl>
+	<dd>set the <b>Hidden</b> property for the default System filesystem back to <b>True</b>.
+</dl>
+
+<p><b>WARNING</b>: The Default System filesystem consists of files that the IDE itself uses. You should keep this filesystem hidden so that you do not accidently change or remove these files.
+
+<br><hr>
+
+<h3>Installation Subdirectories</h3>
+
+<div align="center"> 
+<table border="1" width="95%" cellspacing="0" cellpadding="10" bgcolor="#FFFFFF" bordercolor="#006666">
+	<tr NOSAVE>
+		<td>/beans</td>
+		<td>contains JavBeans&#153; components installed in Forte for Java.</td>
+	</tr>
+	<tr>
+		<td>/bin</td>
+		<td>includes the Forte for Java launchers the ide.cfg file on Windows installations addtopath.bat, which is used by the batch file startup.</td>
+	</tr>
+	<tr>
+		<td>/Development</td>
+		<td>the directory mounted by default in Filesystems. Objects you create in Forte for Java will be saved here unless you mount other directories and use them.</td>
+	</tr>
+	<tr>
+		<td>/docs&nbsp;</td>
+		<td>contains Forte for Java documentation.</td>
+	</tr>
+	<tr>
+		<td>/javadoc</td>
+		<td>the directory mounted by default in Forte for Java javadoc repository. Javadoc documentation that you create in Forte for Java will be stored here.</td>
+	</tr>
+	<tr>
+		<td>/lib&nbsp;</td>
+		<td>contains JAR files that comprise the IDE's core implementation and the open APIs.</td>
+	</tr>
+	<tr>
+		<td>/lib/ext</td>
+		<td>contains extensions to the IDE for other functionality such as
+			<ul type="disc">
+				<li>JavaHelp</li>
+				<li>Absolute Layout</li>
+				<li>javac</li>
+				<li>regular expressions.<br><br></li>
+			</ul>
+
+		</td>
+	</tr>
+	<tr>
+		<td>/lib/patch</td>
+		<td>any JAR or ZIP files included in this folder will be automatically included at the beginning of the IDE's startup class path; it will be a patch against the core.</td>
+	</tr>
+	<tr>
+		<td>/modules</td>
+		<td>any JAR file in this folder is an IDE&nbsp;module.</td>
+	</tr>
+	<tr>
+		<td>/modules/ext</td>
+		<td>contains libraries used by the modules.</td>
+	</tr>
+	<tr>
+		<td>/sources</td>
+		<td>contains sources for libraries which may be redistributed with user applications.</td>
+	</tr>
+	<tr>
+		<td>/system</td>
+		<td>includes files and directories used by the IDE for special purposes. It includes
+			<ul type="disc">
+				<li>ide.log, provides information useful when requesting technical support,</li>
+				<li>project.basic, and</li>
+				<li>project.last, both of which contain information on Forte for Java projects.<br><br></li>
+			</ul>
+		It is mounted as a hidden file system.</td>
+	</tr>
+	<tr>
+		<td>/system/actions</td>
+		<td>contains actions that appear in Global Options under Actions.</td>
+	</tr>
+	<tr>
+		<td>/system/applet</td>
+		<td>contains policy file for debugging applets.</td>
+	</tr>
+	<tr>
+		<td>/system/parserDB</td>
+		<td>holds databases that are used for Java code completion and other Editor functions.</td>
+	</tr>
+	<tr>
+		<td>/system/startup</td>
+		<td>holds classes that are run at IDE startup.</td>
+	</tr>
+	<tr>
+		<td>/temp</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+</div>
+
+
+
+<!--BODYCOPY End-->
+
+
+<br><hr>
+
+<h3>Additional Forte&#153; for Java&#153; Information</h3>
+
+<p><b>Free Online Training:</b><br>
+Free online online for Forte&#153; for Java&#153; is located at <a href="http://www.sun.com/forte/ffj/resources/support.html#training" target="info">http://www.sun.com/forte/ffj/resources/support.html#training</a>.
+
+<dl>
+	<dt>For the latest information on Forte&#153; for Java&#153; please visit... 
+		<dd><a href="http://www.sun.com/forte/" target="new">http://www.sun.com/forte/</a>
+</dl>
+
+<hr WIDTH="100%">
+
+<p align="center"><font size="-1"><a href="lin_install-main.htm">Back to Software Installation</a></font></p>
+
+<p>
+
+</body>
+</html>

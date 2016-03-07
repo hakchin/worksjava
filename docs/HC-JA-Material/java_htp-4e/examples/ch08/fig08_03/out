@@ -1,0 +1,6 @@
+TimeTest.java:9: Variable hour in class Time1 not
+                 accessible from class TimeTest.
+      t.hour = 7;
+       ^
+1 error
+

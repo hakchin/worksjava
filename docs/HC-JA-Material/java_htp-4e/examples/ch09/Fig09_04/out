@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.ClassCastException: Point
+    at InheritanceTest.main(InheritanceTest.java:40)
+

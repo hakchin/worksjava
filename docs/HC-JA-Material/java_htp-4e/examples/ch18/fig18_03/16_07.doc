@@ -1,0 +1,15 @@
+deitelLoop.java 
+
+** already have docs on HTML parameters
+
+Line 35 declares and initializes a new LogoAnimator object by sending, as arguments, totalImages, animationDelay, and imageName.
+
+Next, line 38 sets the size of the applet to slightly larger than that of the animation.  The animation is added to the center of the applet in line 40.  In line 42 the startAnimation method of the LogoAnimator class is called and then animation begins.
+
+
+LogoAnimator.java
+
+Beginning on line 35 is a second constructor that takes arguments for totalImages, currentImage, and imageName.  It simply calls the zero argument default constructor in line 37 and then sets those variables in lines 38-40.
+
+
+

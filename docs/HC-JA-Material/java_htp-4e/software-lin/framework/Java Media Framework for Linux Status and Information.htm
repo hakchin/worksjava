@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0065)http://www.blackdown.org/java-linux/jdk1.2-status/jmf-status.html -->
+<HTML><HEAD><TITLE>Java Media Framework for Linux: Status and Information</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="jmf, linux, java media framework, java media, media, framework" 
+name=keywords>
+<META content="MSHTML 5.50.4522.1800" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#000077 aLink=#ff0000 link=#0000ff bgColor=#ffffff><A 
+href="http://www.blackdown.org/java-linux/jdk1.2-status/index.html">Back to main 
+status page</A> 
+<H1>
+<CENTER><FONT style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">Java 
+Media Framework for Linux </FONT></CENTER></H1>
+<H5>$Date: 2001/05/25 21:17:47 $<BR>$Author: jk $ </H5>For general information 
+about JMF, API documentation, tutorials and examples visit <A 
+href="http://java.sun.com/products/java-media/jmf/index.html">Sun's Java Media 
+Framework page</A>. 
+<P>
+<H2><FONT style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">JMF 
+2.1.1-FCS </FONT></H2>
+<H3><FONT 
+style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">Requirements 
+</FONT></H3>
+<UL>
+  <LI><A 
+  href="http://www.blackdown.org/java-linux/jdk1.2-status/jdk1.3-status.html">Blackdown</A> 
+  or <A href="http://java.sun.com/j2se/1.3/download-linux.html">Sun</A> Java2 
+  Standard Edition SDK or Runtime Environment v1.3.0 or higher for Linux/i386 
+  </LI></UL>
+<H3><FONT 
+style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">Installation 
+</FONT></H3>JMF 2.1.1 is currently available in three different formats. You 
+only have to install one of the following packages: 
+<UL>
+  <LI><B><FONT 
+  style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">Standard package: 
+  jmf-2.1.1-fcs-linux-i386.tar.bz2 </FONT></B><BR>Download 
+  <TT>jmf-2.1.1-fcs-linux-i386.tar.bz2</TT> from one of our <A 
+  href="http://www.blackdown.org/java-linux/mirrors.html">mirrors</A>. 
+  <P></P>Installation: 
+  <BLOCKQUOTE><PRE>% cd &lt;targetdirectory&gt;
+% bzip2 -dc &lt;downloadpath&gt;/jmf-2.1.1-fcs-linux-i386.tar.bz2 | tar xvf -
+% export PATH=&lt;targetdirectory&gt;/jmf-2.1.1/bin:$PATH
+% export CLASSPATH=&lt;targetdirectory&gt;/jmf-2.1.1/lib/jmf.jar:&lt;targetdirectory&gt;/jmf-2.1.1/lib/sound.jar:&lt;targetdirectory&gt;/jmf-2.1.1/lib/mediaplayer.jar:&lt;targetdirectory&gt;/jmf-2.1.1/lib/multiplayer.jar:&lt;targetdirectory&gt;/jmf-2.1.1/lib:$CLASSPATH
+% export LD_LIBRARY_PATH=&lt;targetdirectory&gt;/jmf-2.1.1/lib:$LD_LIBRARY_PATH
+              </PRE></BLOCKQUOTE>
+  <P></P>
+  <LI><B><FONT style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">Java2 
+  Extension package: jmf-for-java2-2.1.1-fcs-linux-i386.tar.bz2 
+  </FONT></B><BR>Download <TT>jmf-for-java2-2.1.1-fcs-linux-i386.tar.bz2</TT> 
+  from one of our <A 
+  href="http://www.blackdown.org/java-linux/mirrors.html">mirrors</A>. 
+  <P></P>
+  <UL>
+    <LI><EM>Installation with a J2SDK 1.3: </EM>
+    <BLOCKQUOTE><PRE>% cd &lt;j2sdk1.3.0 installation&gt;/jre
+% bzip2 -dc &lt;downloadpath&gt;/jmf-for-java2-2.1.1-fcs-linux-i386.tar.bz2 | tar xvf -
+% export PATH=&lt;j2sdk1.3.0 installation&gt;/jre/bin:$PATH
+              </PRE></BLOCKQUOTE>
+    <LI><EM>Installation with a J2RE 1.3: </EM>
+    <BLOCKQUOTE><PRE>% cd &lt;j2re1.3.0 installation&gt;
+% bzip2 -dc &lt;downloadpath&gt;/jmf-for-java2-2.1.1-fcs-linux-i386.tar.bz2 | tar xvf-<BR>
+              </PRE></BLOCKQUOTE></LI></UL>
+  <P></P>
+  <LI><B><FONT style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">Debian 
+  package: jmf_2.1.1-1_i386.deb </FONT></B><BR>Select one of our <A 
+  href="http://www.blackdown.org/java-linux/mirrors.html">mirrors</A> and add a 
+  line of the form 
+  <BLOCKQUOTE><TT>deb ftp://&lt;mirror&gt;/&lt;path to java dir&gt;/debian 
+    &lt;dist&gt; non-free </TT></B></BLOCKQUOTE>
+  <P>to <TT>/etc/apt/source.list</TT>. <TT>&lt;dist&gt;</TT> should be 
+  <TT>potato</TT> or <TT>woody</TT>.<BR>E.g., if you want to use the <A 
+  href="ftp://ftp.tux.org/java/debian/dists/woody">woody tree</A> on <A 
+  href="ftp://ftp.tux.org/">ftp://ftp.tux.org/</A> you would use </P>
+  <BLOCKQUOTE><TT>deb ftp://ftp.tux.org/java/debian woody 
+    non-free</CODE><BR></TT></BLOCKQUOTE>
+  <P>Then install the package <B>jmf</B> using the standard Debian tools. No 
+  further setup is required. </P></LI></UL>
+<H3><FONT style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">Bug 
+reporting </FONT></H3>You can report bugs <A 
+href="http://www.blackdown.org/cgi-bin/jdk">here</A>. </BODY></HTML>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<attributes version="1.0">
+   <fileobject name="ClientGUI.java">
+      <attr name="class_dependency_com.deitel.messenger.MessageListener" stringvalue="ClientGUI.MyMessageListener"/>
+      <attr name="class_dependency_javax.swing.JFrame" stringvalue="ClientGUI"/>
+      <attr name="class_dependency_java.lang.Runnable" stringvalue="ClientGUI.MessageDisplayingThread"/>
+      <attr name="class_dependency_java.awt.event.ActionListener" stringvalue="ClientGUI.DisconnectListener;ClientGUI.ConnectListener"/>
+   </fileobject>
+</attributes>

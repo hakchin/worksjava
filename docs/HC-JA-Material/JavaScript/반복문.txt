@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<TITLE>while문</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+i=prompt("원하는 단수를 입력해 주세요","")
+j=1
+while(j<10)
+{
+document.write(i+"*"+j+"="+i*j+"<br>")
+j++
+}
+//-->
+      </SCRIPT>
+</HEAD>
+
+===================================================
+
+
+<HTML>
+<HEAD>
+<TITLE> do~while문 예제1 </TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+i=prompt("원하는 단수를 입력해 주세요","")
+j=1
+do
+{
+document.write(i+"*"+j+"="+i*j+"<br>")
+j++
+}
+while(j<10)
+//-->
+      </SCRIPT>
+</HEAD>
+
+
+====================================================
+<html>
+<head>
+<title>continue문과 break문</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+ i=14
+ while(true) {  		
+ 	i--
+ 	if(i > 10) continue; 
+ 	if(i == 3) break; 
+ 	document.write("i = "+i+"<br>")
+ 		
+ }
+//-->
+</SCRIPT>
+</head>
+<body>
+</body>
+</html>
+
+====================================================
+<HTML>
+ <HEAD>
+ <TITLE>1부터 10까지 더하기</TITLE>
+ <SCRIPT LANGUAGE="JavaScript">
+ <!--
+ i=0
+ j=0
+ while(i<10) {
+ i++
+ j=j+i
+ document.write(i)
+ if(i!=10)
+  document.write("+")
+ }
+ document.write("="+j)
+ //-->
+ </SCRIPT>
+ </HEAD>
+ <BODY>
+ </BODY>
+</HTML>

@@ -1,0 +1,4 @@
+Employee object constructor: Susan Baker
+Employee object constructor: Bob Jones
+Employee object finalizer: Susan Baker; count = 1
+Employee object finalizer: Bob Jones; count = 0

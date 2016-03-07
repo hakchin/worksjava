@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<attributes version="1.0">
+   <fileobject name="MulticastSendingThread.java">
+      <attr name="class_dependency_com.deitel.messenger.sockets.SocketMessengerConstants" stringvalue="MulticastSendingThread"/>
+      <attr name="class_dependency_java.lang.Thread" stringvalue="MulticastSendingThread"/>
+   </fileobject>
+   <fileobject name="DeitelMessengerServer.java">
+      <attr name="class_dependency_java.lang.Object" stringvalue="DeitelMessengerServer"/>
+      <attr name="class_dependency_com.deitel.jhtp4.networking.messenger.MessageListener" stringvalue="DeitelMessengerServer"/>
+      <attr name="class_dependency_com.deitel.messenger.MessageListener" stringvalue="DeitelMessengerServer"/>
+      <attr name="class_dependency_com.deitel.messenger.sockets.SocketMessengerConstants" stringvalue="DeitelMessengerServer"/>
+   </fileobject>
+   <fileobject name="ReceivingThread.java">
+      <attr name="class_dependency_com.deitel.messenger.sockets.SocketMessengerConstants" stringvalue="ReceivingThread"/>
+      <attr name="class_dependency_java.lang.Thread" stringvalue="ReceivingThread"/>
+   </fileobject>
+</attributes>

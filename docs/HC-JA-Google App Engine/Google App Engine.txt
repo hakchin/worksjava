@@ -1,0 +1,26 @@
+1.
+http://www.ibm.com/developerworks/java/library/j-gaej1/
+
+2.
+http://www.ibm.com/developerworks/java/library/j-gaej2/
+
+아래 것은 중요하다. 이것을 몰라서 무척 헤메었다.
+Lena,
+It is not stated clearly in the article what the project name should be and you probably used other name for project than "ContactList". In this case it is easy to fix.
+
+1. open web.xml and map servlet "contacts" servlet to your entry point class, but in url-pattern use your projects name instead of "contactlist" like this: <url-pattern>/your_app_name/contacts</url-pattern>
+
+2. open YouProjectName.html file end replace default table with code from the article.
+
+3. open YouProjectName.gwt.xml and replace default entry point maping with mapping to yours entry point
+
+4. Compile project with your entry point selected
+
+5. Start GWT project and select YouProjectName.html 
+
+It should work
+
+
+
+3.
+http://www.ibm.com/developerworks/java/library/j-gaej3.html

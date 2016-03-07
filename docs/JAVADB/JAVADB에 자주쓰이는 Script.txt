@@ -1,0 +1,16 @@
+------------------------------------------------------------------------
+KJLKJLKJLK
+------------------------------------------------------------------------
+set DERBY_HOME=C:\JAVADB
+set PATH=%DERBY_HOME%\bin;%PATH%.
+
+------------------------------------------------------------------------
+CLASSPATH
+------------------------------------------------------------------------
+Prompt>%DERBY_HOME%\bin\setEmbeddedCP.bat
+Prompt>%DERBY_HOME%\bin\setNetworkServerCP.bat
+Prompt>%DERBY_HOME%\bin\setNetworkClientCP.bat
+
+
+
+set CLASSPATH=%DERBY_HOME%\lib\derbyclient.jar;.

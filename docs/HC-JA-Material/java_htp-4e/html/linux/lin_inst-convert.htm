@@ -1,0 +1,329 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>Java&#153; Plug-in HTML Converter - Installer Info</title>
+   <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body text="#000000" bgcolor="#FCF0BC" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h1>Java&#153; Plug-in HTML Converter<br><font size="+1">for Linux Installation</font></h1>
+
+<p>Read the following documentation to install Java&#153; Plug-in HTML Converter from the CD.
+
+<p>Have you reviewed the Java&#153; Plug-in HTML Converter <a href="la-conv.htm">License Agreement</a>?
+
+<hr>
+
+<!--BODYCOPY Start-->
+
+<p>The Java&#153; Plug-in HTML Converter converts a file containing applets to a form that uses Java&#153; Plug-in. To use the HTML Converter, follow the directions below.
+
+<h3>Getting Started with the HTML Converter</h3>
+
+<p>Start the converter
+
+<ol type="1" start="1.">
+	<li>Copy the <b>converter</b> directory from this CD which is located in the <b>software-lin</b> directory on the root level of this CD-ROM, to you hard drive using your favorite graphical or command line tool.<br><br>
+	<li>CD to the directory in which you moved the <b>converter</b>.<br><br>
+	<li>CD into the <b>converter\classes</b> directory.<br><br>
+	<li>Launch the HTML Converter with this command:<br><br>
+	<dd><tt><b>java -classpath . HTMLConverter</b></tt>
+</ol>
+
+<br><hr>
+
+<h3>Using the Graphical HTML Converter</h3>
+<p>1. Start the HTML Converter
+<dl>
+	<dd>Start the graphical interface by using one of the methods above. For instructions for using the HTML Converter directly from the command line please see Using the Command Line to Run the Converter.
+</dl>
+
+<p>2. Select files to convert
+
+<dl>
+	<dd>Choose "Browse..." to select the folder from a dialog box. Once you have selected a folder, you can choose specific files to be converted by specifying patterns to match in the "Matching File Names" box. You can use * as a wildcard. Each pattern must be separated by a comma.<br><br>
+	<dd>Example: Entering *.html,*.htm will cause all files ending with .html and .htm to be converted.<br><br>
+	<dd>To convert all the matching files in nested subfolders, select "Include Subfolders".
+</dl>
+
+<p>3. Choose a backup folder
+
+<dl>
+	<dd>The default backup folder has the same name as the folder that contains the source documents with _BAK appended to it.<br><br>
+	<dd>Example: If the path to the source document is C:\html\applet.html the backup folder is C:\html_BAK.<br><br>
+	<dd>If you want to select a different backup folder, type the new path in the "Backup Files to Folder" box or choose "Browse..." to select the new folder from a dialog box.
+</dl>
+
+<p>4. Generate a log file
+
+<dl>
+	<dd>The log file from the HTML Converter contains basic information related to the conversion process including the date of conversion, number of files processed and the number of applets found.<br><br>
+	<dd>If you want a log file to be generated, select "Generate Log File" from the Edit -&gt; Options window. Type the path in the "Specify Location for Log File" box or choose "Browse..." to choose a folder.
+</dl>
+
+<p>5. Choose a conversion template
+
+<dl>
+	<dd>A template file determines how the HTML of your file is altered to use Java Plug-in. If no template is chosen, a default template will be used. The default template will produce converted HTML files that will work with IE and Netscape.<br><br>
+	<dd>If you want to use a different template, select it from the drop-down menu labeled "Template File". If you choose "Other Template", you can choose a customized file that will be used as the template. This file must be a template.
+</dl>
+
+<p>6. Convert the documents
+
+<dl>
+	<dd>Click the "Convert..." button to begin the conversion process. A dialog box will show the file being processed, the number of files processed, the number of applets found, and number of errors found.
+</dl>
+
+<p>7. Exiting the HTML Converter
+
+<dl>
+	<dd>When the conversion is complete, the button in the dialog box will change from "Cancel" to "Done". Click "Done" to close the dialog box.<br><br>
+	<dd>Select "Exit" from the "File" menu to close the Java&#153; Plug-in HTML Converter, or repeat the steps above to choose another set of files to convert.
+</dl>
+
+<br><hr>
+
+<h3>Using the Command Line to Run the Converter</h3>
+<p>The HTML Converter now supports a command line interface.
+
+<p>java -classpath . HTMLConverter [ filespecs ] [-simulate]
+<br>[-options1 value1 [-option2 value2 [...]]]
+
+<dl>
+	<dt>filespecs
+<dd>space delimited list of file specs, * wildcard. (*.html *.htm)
+</dl>
+
+<dl>
+	<dt>options
+	<br>source
+		<dd>Path to source files. (c:\htmldocs) Default: &lt;userdir&gt;
+<br>If the path is relative, it is assumed to be relative to the directory
+in which HTMLConverter was launched.
+</dl>
+
+<dl>
+	<dt>backup
+		<dd>Path to write backup files. Default: &lt;userdir>/&lt;source>_bak
+<br>If the path is relative, it is assumed to be relative to the directory in which HTMLConverter was launched.
+</dl>
+
+<dl>
+	<dt>subdirs
+		<dd>Option for processing files in subdirectories. Default: FALSE
+</dl>
+
+<dl>
+	<dt>template
+		<dd>Name of template file. Default: default.tpl
+<br>default.tpl is standard (IE &amp; Navigator) for Windows &amp; Solaris only.
+<br>Use the default if you are unsure.
+</dl>
+
+<dl>
+	<dt>log
+		<dd>Path and filename for log file. Default &lt;userdir>/convert.log)
+</dl>
+
+<dl>
+	<dt>progress
+		<dd>Display standard out progress while converting. Default: true
+</dl>
+
+<dl>
+	<dt>simulate
+		<dd>Display the specifics to the conversion without converting.
+<br>You will be given a list of detailed information specific to the conversion. Use this option if you are unsure.
+</dl>
+
+<p>If only java HTMLConverter is typed at the command line (no filespecs or options), the graphical interface of the converter will be launched.
+
+<br><hr>
+
+<a name="templates"></a>
+<h3>Templates</h3>
+<p>The template file determines how the converted applets are coded in the HTML page. A template is simply a text file containing tags that represent the parts of the original applet. By adding, deleteing or rearranginging the tags in a template file, you can alter the output of the converted file.
+
+
+<p><b>Supported Tags:</b>
+
+<dl>
+	<dt>$OriginalApplet$
+		<dd>This tag is substituted for the complete text of the original applet.
+</dl>
+
+<dl>
+	<dt>$AppletAttributes$
+		<dd>This tag is substituted for all of the applets attributes. (code, codebase, width, height, etc.)
+</dl>
+
+<dl>
+	<dt>$ObjectAttributes$
+		<dd>This tag is substituted for all the attributes required by the object tag.
+</dl>
+
+<dl>
+	<dt>$EmbedAttributes$
+		<dd>This tag is substituted for all the attributes required by the embed tag.
+</dl>
+
+<dl>
+	<dt>$AppletParams$
+		<dd>This tag is substituted for all the applet's &lt;param ...> tags
+</dl>
+
+<dl>
+	<dt>$ObjectParams$
+		<dd>This tag is substituted for all the &lt;param...> tags required by the object tag.
+</dl>
+
+<dl>
+	<dt>$EmbedParams$
+		<dd>This tag is substituted for all the &lt;param...> tags required by the embed tag in the form NAME=VALUE
+</dl>
+
+<dl>
+	<dt>$AlternateHTML$
+		<dd>This tag is substituted for the text in the No support for applets area of the original applet
+</dl>
+
+<dl>
+	<dt>$CabFileLocation$
+		<dd>This is the URL of the cab file that should be used in each template that targets IE.
+</dl>
+
+<dl>
+	<dt>$NSFileLocation$
+		<dd>This is the URL of the Netscape plugin that be used in each template that targets Netscape
+</dl>
+
+<p><b>default.tpl</b>
+<br>This is the default template for the converter. The converted page can be used in IE and Navigator on Windows 95 or Windows NT to invoke Java&#153; Plug-in.
+
+<tt><b><dl><dd>
+<p>&lt;OBJECT
+<br>&nbsp; classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+<br>$ObjectAttributes$ codebase="$CabFileLocation$"&gt;
+<br>$ObjectParams$
+<br>&lt;PARAM NAME="type"
+<br>&nbsp; &nbsp; &nbsp; &nbsp; VALUE="application/x-java-applet;version=1.3"&gt;
+<br>$AppletParams$&lt;COMMENT>
+<br>&lt;EMBED type="application/x-java-applet;version=1.3"
+<br>&nbsp; &nbsp; &nbsp; &nbsp; $EmbedAttributes$
+<br>$EmbedParams$ pluginspage="$NSFileLocation$"&gt;
+<br>&lt;NOEMBED>&lt;/COMMENT&gt;
+<br>$AlternateHTML$
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/NOEMBED>&lt;/EMBED&gt;
+<br>&lt;/OBJECT&gt;
+</dl></b></tt>
+
+<p><b>ieonly.tpl</b>
+<br>Pages converted with this template can be used to invoke Java&#153; Plug-in in IE  on Windows 95 or Windows NT only.
+
+<tt><b><dl><dd>
+<p>&lt;OBJECT
+<br>&nbsp; classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+<br>$ObjectAttributes$ codebase="$CabFileLocation$"&gt;
+<br>$ObjectParams$
+<br>&lt;PARAM NAME="type"
+<br>&nbsp; &nbsp; &nbsp; &nbsp; VALUE="application/x-java-applet;version=1.3"&gt;
+<br>$AppletParams$
+<br>$AlternateHTML$
+<br>&lt;/OBJECT&gt;
+</dl></b></tt>
+
+<p><b>nsonly.tpl</b>
+<br>Pages converted with this template can be used to invoke Java&#153; Plug-in in Navigator on Windows 95 or Windows NT only.
+
+<tt><b><dl><dd>
+<p>&lt;EMBED type="application/x-java-applet;version=1.3"
+<br>&nbsp; &nbsp; &nbsp; $EmbedAttributes$
+<br>$EmbedParams$ pluginspage="$NSFileLocation$">&lt;NOEMBED>
+<br>$AlternateHTML$
+<br>&lt;/NOEMBED>&lt;/EMBED>
+</dl></b></tt>
+
+<p><b>extend.tpl</b>
+<br>Pages converted with this template can be used in any browser or platform. If the browser is IE or Navigator on Windows 95 or Windows NT, Java&#153; Plug-in will be invoked. Otherwise, the browser's default JVM is used.
+
+<tt><b><dl><dd>
+<p>&lt;SCRIPT LANGUAGE="JavaScript">&lt;!--
+<br>&nbsp; &nbsp; var _info = navigator.userAgent; var _ns = false;
+<br>&nbsp; &nbsp; var _ie = (_info.indexOf("MSIE") > 0
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp;&amp; _info.indexOf("Win") > 0 &amp;&amp;
+<br>_info.indexOf("Windows 3.1") &lt; 0);
+<br>//-->&lt;/SCRIPT>
+<br>&lt;COMMENT>&lt;SCRIPT LANGUAGE="JavaScript1.1">&lt;!--
+<br>&nbsp; &nbsp; var _ns = (navigator.appName.indexOf("Netscape") >= 0 &amp;&amp;
+<br>((_info.indexOf("Win") > 0 &amp;&amp; _info.indexOf("Win16") &lt; 0 &amp;&amp;
+<br>java.lang.System.getProperty("os.version").indexOf("3.5")
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt; 0) ||
+<br>_info.indexOf("Sun") > 0));
+<br>//-->&lt;/SCRIPT>&lt;/COMMENT></b></tt>
+
+
+<tt><b><p>&lt;SCRIPT LANGUAGE="JavaScript">&lt;!--
+<br>&nbsp; &nbsp; if (_ie == true) document.writeln('&lt;OBJECT
+<br>classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+<br>&nbsp; &nbsp; &nbsp; $ObjectAttributes$
+<br>codebase="$CabFileLocation$">&lt;NOEMBED>&lt;XMP>');
+<br>&nbsp; &nbsp; else if (_ns == true) document.writeln('&lt;EMBED
+<br>type="application/x-java-applet;version=1.3"
+<br>&nbsp; &nbsp; &nbsp; $EmbedAttributes$
+<br>$EmbedParams$ pluginspage="$NSFileLocation$">
+<br>&nbsp; &nbsp; &nbsp; &lt;NOEMBED>&lt;XMP>');
+<br>//-->&lt;/SCRIPT>
+<br>&lt;APPLET $AppletAttributes$>&lt;/XMP>
+<br>$ObjectParams$
+<br>&lt;PARAM NAME="type"
+<br>&nbsp; &nbsp; &nbsp; VALUE="application/x-java-applet;version=1.3">
+<br>$AppletParams$
+<br>&lt;/APPLET>
+<br>$AlternateHTML$
+<br>&lt;/NOEMBED>&lt;/EMBED>&lt;/OBJECT>
+</dl></b></tt>
+
+<br><hr>
+
+<h3>Using the HTML Converter on Other Platforms</h3>
+<p>If you want to run the converter on a platform other than Solaris, Microsoft Windows, or Linux, you will need to use the Pure Java installer. Once the installation is done, change directory to the install folder, and set the classpath to
+
+<dl>
+	<dd>./:./HTMLConverter.jar:./templates
+</dl>
+
+<p>Note: .'s and /'s are UNIX specific. Be sure to use the proper file and path separators for your platform. Then launch the HTML Converter by invoking the main class, HTMLConverter.
+
+
+<p><b>How the HTML Converter Works</b>
+<p>HTML that is not part of an applet is transferred from the source file to a temporary file. When an &lt;APPLET tag is reached, the converter parses the applet to the first &lt;/APPLET tag and merges the applet data with the template. This is then appended to the temporary file. For more information about templates, see <a href="#templates">Templates</a>.
+
+<p>If this completes without error, the original HTML file is moved to the backup folder and the temporary (converted) file is renamed to the original file's name. Your original files are never removed from the disk.
+
+<p>Note that the converter effectively converts the files in place. Once you have run the converter, your files are ready to use Java&#153; Plug-in.
+
+<br><hr>
+
+<h3>Additional Java&#153; Plug-in HTML Converter Information</h3>
+
+<dl>
+	<dt>For the latest information on Java&#153; Plug-in HTML Converter please visit... 
+		<dd><a href="http://java.sun.com/products/plugin/" target="new">http://java.sun.com/products/plugin/</a>
+</dl>
+
+<!--BODYCOPY End-->
+
+<hr WIDTH="100%">
+
+<p align="center"><font size="-1"><a href="lin_install-main.htm">Back to Software Installation</a></font></p>
+
+<p>
+
+</body>
+</html>
+
+
+

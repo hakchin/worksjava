@@ -1,0 +1,84 @@
+// Fig. 15.7: RandomCharacters.java
+// Demonstrating the Runnableinterface
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class RandomCharacters extends JApplet
+                              implements Runnable,
+                                         ActionListener {
+   private String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   private JLabel output;
+   private JCheckBox checkbox;
+   
+   private volatile Thread thread;
+   private boolean suspended;
+
+   public void init()
+   {
+      Container c = getContentPane();
+      c.setLayout( new GridLayout( 1, 2, 5, 5 ) );
+
+      output = new JLabel();
+      output.setBackground( Color.green );
+      output.setOpaque( true );
+      c.add( output );
+
+      checkbox = new JCheckBox( "Suspended" );
+      checkbox.addActionListener( this );
+      c.add( checkbox );
+   }
+
+   public void start()
+   {
+      thread = new Thread( this );
+      thread.start();
+   }
+
+   public synchronized void stop()
+   {
+      // stop thread every time stop is called
+      // as the user browses another Web page
+      thread = null;
+      notifyAll();
+   }
+
+   public synchronized void actionPerformed( ActionEvent e )
+   {
+      suspended = !suspended;
+      System.out.println( "action: " + suspended );
+
+      output.setBackground(
+         !suspended ? Color.green : Color.red );
+
+      notifyAll();
+   }
+
+   public void run()
+   {
+      Thread currentThread = Thread.currentThread();
+      char displayChar;
+
+      while ( thread == currentThread ) {
+         // sleep from 0 to 1 second
+         try {
+            Thread.sleep( (int) ( Math.random() * 1000 ) );
+
+            synchronized( this ) {
+               System.out.println( "run: " + suspended );
+               while ( suspended && thread == currentThread )
+                  wait();
+            }
+         }
+         catch ( InterruptedException e ) {
+            System.out.println( "sleep interrupted" );
+         }
+         
+         displayChar = alphabet.charAt(
+                          (int) ( Math.random() * 26 ) );
+         output.setText( "Random character: " + displayChar );
+      }
+
+      System.out.println( "thread terminating" );
+   }
+}

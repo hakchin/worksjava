@@ -1,0 +1,1 @@
+<a href="get_output.jsp?name=jihoon&age=30">[get 방식 전송]</a>

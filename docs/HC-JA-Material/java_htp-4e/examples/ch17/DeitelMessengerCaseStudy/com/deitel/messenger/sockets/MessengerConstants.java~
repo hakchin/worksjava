@@ -1,0 +1,23 @@
+// MessengerConstants.java
+//
+package com.deitel.messenger.sockets;
+
+// Java core packages
+import java.util.*;
+import java.net.*;
+import java.io.*;
+
+// Java extension packages
+import javax.swing.*;
+
+// third-party packages
+
+// Deitel packages
+
+public class MessengerConstants {
+   
+   // MessengerConstants constructor
+   public MessengerConstants() 
+   {
+   }
+}
