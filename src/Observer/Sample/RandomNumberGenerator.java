@@ -1,9 +1,9 @@
 import java.util.Random;
 
 public class RandomNumberGenerator extends NumberGenerator {
-    private Random random = new Random();   // ³­¼ö¹ß»ı±â
-    private int number;                     // ÇöÀçÀÇ ¼ö
-    public int getNumber() {                // ¼ö¸¦ ÃëµæÇÑ´Ù.
+    private Random random = new Random();   // ë‚œìˆ˜ë°œìƒê¸°
+    private int number;                     // í˜„ì¬ì˜ ìˆ˜
+    public int getNumber() {                // ìˆ˜ë¥¼ ì·¨ë“í•œë‹¤.
         return number;
     }
     public void execute() {

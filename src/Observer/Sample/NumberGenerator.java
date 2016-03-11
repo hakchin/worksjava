@@ -2,20 +2,20 @@ import java.util.Vector;
 import java.util.Iterator;
 
 public abstract class NumberGenerator {
-    private Vector observers = new Vector();        // ObserverµéÀ» º¸°ü
-    public void addObserver(Observer observer) {    // Observer¸¦ Ãß°¡
+    private Vector observers = new Vector();        // Observerë“¤ì„ ë³´ê´€
+    public void addObserver(Observer observer) {    // Observerë¥¼ ì¶”ê°€
         observers.add(observer);
     }
-    public void deleteObserver(Observer observer) { // Observer¸¦ »èÁ¦
+    public void deleteObserver(Observer observer) { // Observerë¥¼ ì‚­ì œ
         observers.remove(observer);
     }
-    public void notifyObservers() {               // Observer¿¡ ÅëÁö
+    public void notifyObservers() {               // Observerì— í†µì§€
         Iterator it = observers.iterator();
         while (it.hasNext()) {
             Observer o = (Observer)it.next();
             o.update(this);
         }
     }
-    public abstract int getNumber();                // ¼ö¸¦ ÃëµæÇÑ´Ù.
-    public abstract void execute();                 // ¼ö¸¦ »ı¼ºÇÑ´Ù.
+    public abstract int getNumber();                // ìˆ˜ë¥¼ ì·¨ë“í•œë‹¤.
+    public abstract void execute();                 // ìˆ˜ë¥¼ ìƒì„±í•œë‹¤.
 }
