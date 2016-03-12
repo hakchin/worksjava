@@ -2,15 +2,15 @@ import java.util.Iterator;
 import java.util.Vector;
 
 public class Directory extends Entry {
-    private String name;                    // µğ·ºÅä¸®ÀÇ ÀÌ¸§
-    private Vector directory = new Vector();      // µğ·ºÅä¸® ¿£Æ®¸®ÀÇ ÁıÇÕ
-    public Directory(String name) {         // »ı¼ºÀÚ
+    private String name;                    // ë””ë ‰í† ë¦¬ì˜ ì´ë¦„
+    private Vector directory = new Vector();      // ë””ë ‰í† ë¦¬ ì—”íŠ¸ë¦¬ì˜ ì§‘í•©
+    public Directory(String name) {         // ìƒì„±ì
         this.name = name;
     }
-    public String getName() {               // ÀÌ¸§À» ¾ò´Â´Ù.
+    public String getName() {               // ì´ë¦„ì„ ì–»ëŠ”ë‹¤.
         return name;
     }
-    public int getSize() {                  // »çÀÌÁî¸¦ ¾ò´Â´Ù.
+    public int getSize() {                  // ì‚¬ì´ì¦ˆë¥¼ ì–»ëŠ”ë‹¤.
         int size = 0;
         Iterator it = directory.iterator();
         while (it.hasNext()) {
@@ -19,11 +19,11 @@ public class Directory extends Entry {
         }
         return size;
     }
-    public Entry add(Entry entry) {         // ¿£Æ®¸®ÀÇ Ãß°¡
+    public Entry add(Entry entry) {         // ì—”íŠ¸ë¦¬ì˜ ì¶”ê°€
         directory.add(entry);
         return this;
     }
-    protected void printList(String prefix) {       // ¿£Æ®¸®ÀÇ ÀÏ¶÷
+    protected void printList(String prefix) {       // ì—”íŠ¸ë¦¬ì˜ ì¼ëŒ
         System.out.println(prefix + "/" + this);
         Iterator it = directory.iterator();
         while (it.hasNext()) {

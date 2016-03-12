@@ -1,14 +1,14 @@
 public abstract class Entry {
-    public abstract String getName();                               // ÀÌ¸§À» ¾ò´Â´Ù.
-    public abstract int getSize();                                  // »çÀÌÁî¸¦ ¾ò´Â´Ù.
-    public Entry add(Entry entry) throws FileTreatmentException {   // ¿£Æ®¸®¸¦ Ãß°¡ÇÑ´Ù.
+    public abstract String getName();                               // ì´ë¦„ì„ ì–»ëŠ”ë‹¤.
+    public abstract int getSize();                                  // ì‚¬ì´ì¦ˆë¥¼ ì–»ëŠ”ë‹¤.
+    public Entry add(Entry entry) throws FileTreatmentException {   // ì—”íŠ¸ë¦¬ë¥¼ ì¶”ê°€í•œë‹¤.
         throw new FileTreatmentException();
     }
-    public void printList() {                                       // ÀÏ¶÷À» Ç¥½ÃÇÑ´Ù.
+    public void printList() {                                       // ì¼ëŒì„ í‘œì‹œí•œë‹¤.
         printList("");
     }
-    protected abstract void printList(String prefix);               // prefix¸¦ ¾Õ¿¡ ºÙ¿©¼­ ÀÏ¶÷À» Ç¥½ÃÇÑ´Ù.
-    public String toString() {                                      // ¹®ÀÚ¿­ Ç¥Çö
+    protected abstract void printList(String prefix);               // prefixë¥¼ ì•ì— ë¶™ì—¬ì„œ ì¼ëŒì„ í‘œì‹œí•œë‹¤.
+    public String toString() {                                      // ë¬¸ìì—´ í‘œí˜„
         return getName() + " (" + getSize() + ")";
     }
 }
