@@ -9,7 +9,7 @@ public abstract class NumberGenerator {
     public void deleteObserver(Observer observer) { // Observer를 삭제
         observers.remove(observer);
     }
-    public void notifyObservers() {               // Observer에 통지
+    public void notifyObservers() {                 // Observer에 통지
         Iterator it = observers.iterator();
         while (it.hasNext()) {
             Observer o = (Observer)it.next();
