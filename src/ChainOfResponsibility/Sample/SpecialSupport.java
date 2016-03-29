@@ -1,10 +1,10 @@
 public class SpecialSupport extends Support {
-    private int number;                                 // ÀÌ ¹øÈ£¸¸ ÇØ°áÇÒ ¼ö ÀÖ´Ù.
-    public SpecialSupport(String name, int number) {    // »ı¼ºÀÚ
+    private int number;                                 // ì´ ë²ˆí˜¸ë§Œ í•´ê²°í•  ìˆ˜ ìˆë‹¤.
+    public SpecialSupport(String name, int number) {    // ìƒì„±ì
         super(name);
         this.number = number;
     }
-    protected boolean resolve(Trouble trouble) {     // ÇØ°á¿ë ¸Ş¼Òµå
+    protected boolean resolve(Trouble trouble) {     // í•´ê²°ìš© ë©”ì†Œë“œ
         if (trouble.getNumber() == number) {
             return true;
         } else {

@@ -2,7 +2,7 @@ public class NoSupport extends Support {
     public NoSupport(String name) {
         super(name);
     }
-    protected boolean resolve(Trouble trouble) {     // ÇØ°á¿ë ¸Ş¼Òµå
-        return false; // ÀÚ½ÅÀº ¾Æ¹« Ã³¸®µµ ÇÏÁö ¾Ê´Â´Ù.
+    protected boolean resolve(Trouble trouble) {     // í•´ê²°ìš© ë©”ì†Œë“œ
+        return false; // ìì‹ ì€ ì•„ë¬´ ì²˜ë¦¬ë„ í•˜ì§€ ì•ŠëŠ”ë‹¤.
     }
 }

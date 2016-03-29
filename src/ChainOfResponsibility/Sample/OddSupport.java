@@ -1,8 +1,8 @@
 public class OddSupport extends Support {
-    public OddSupport(String name) {                // »ı¼ºÀÚ
+    public OddSupport(String name) {                // ìƒì„±ì
         super(name);
     }
-    protected boolean resolve(Trouble trouble) {    // ÇØ°á¿ë ¸Ş¼Òµå
+    protected boolean resolve(Trouble trouble) {    // í•´ê²°ìš© ë©”ì†Œë“œ
         if (trouble.getNumber() % 2 == 1) {
             return true;
         } else {

@@ -1,10 +1,10 @@
 public class LimitSupport extends Support {
-    private int limit;                              // ÀÌ ¹øÈ£ ¹Ì¸¸ÀÌ¸é ÇØ°á ÇÒ¼ö ÀÖ´Ù.
-    public LimitSupport(String name, int limit) {   // »ı¼ºÀÚ
+    private int limit;                              // ì´ ë²ˆí˜¸ ë¯¸ë§Œì´ë©´ í•´ê²° í• ìˆ˜ ìˆë‹¤.
+    public LimitSupport(String name, int limit) {   // ìƒì„±ì
         super(name);
         this.limit = limit;
     }
-    protected boolean resolve(Trouble trouble) {         // ÇØ°á¿ë ¸Ş¼Òµå
+    protected boolean resolve(Trouble trouble) {         // í•´ê²°ìš© ë©”ì†Œë“œ
         if (trouble.getNumber() < limit) {
             return true;
         } else {

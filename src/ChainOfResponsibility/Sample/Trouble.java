@@ -1,12 +1,12 @@
 public class Trouble {
-    private int number;             // Æ®·¯ºí ¹øÈ£
-    public Trouble(int number) {    // Æ®·¯ºíÀÇ »ı¼º
+    private int number;             // íŠ¸ëŸ¬ë¸” ë²ˆí˜¸
+    public Trouble(int number) {    // íŠ¸ëŸ¬ë¸”ì˜ ìƒì„±
         this.number = number;
     }
-    public int getNumber() {        // Æ®·¯ºí ¹øÈ£¸¦ ¾ò´Â´Ù.
+    public int getNumber() {        // íŠ¸ëŸ¬ë¸” ë²ˆí˜¸ë¥¼ ì–»ëŠ”ë‹¤.
         return number;
     }
-    public String toString() {      // Æ®·¯ºíÀÇ ¹®ÀÚ¿­ Ç¥Çö
+    public String toString() {      // íŠ¸ëŸ¬ë¸”ì˜ ë¬¸ìì—´ í‘œí˜„
         return "[Trouble " + number + "]";
     }
 }
