@@ -4,7 +4,7 @@ public class LimitSupport extends Support {
         super(name);
         this.limit = limit;
     }
-    protected boolean resolve(Trouble trouble) {         // 해결용 메소드
+    protected boolean resolve(Trouble trouble) {    // 해결용 메소드
         if (trouble.getNumber() < limit) {
             return true;
         } else {

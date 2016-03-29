@@ -6,13 +6,13 @@ public class Main {
         b1.show();
         b2.show();
         b3.show();
-        Display b4 = 
+        Display b4 =
                     new SideBorder(
                         new FullBorder(
                             new FullBorder(
                                 new SideBorder(
                                     new FullBorder(
-                                        new StringDisplay("¾È³çÇÏ¼¼¿ä")
+                                        new StringDisplay("ì•ˆë…•í•˜ì„¸ìš”")
                                     ),
                                     '*'
                                 )

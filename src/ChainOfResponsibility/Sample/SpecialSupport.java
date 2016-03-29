@@ -1,6 +1,6 @@
 public class SpecialSupport extends Support {
-    private int number;                                 // 이 번호만 해결할 수 있다.
-    public SpecialSupport(String name, int number) {    // 생성자
+    private int number;                              // 이 번호만 해결할 수 있다.
+    public SpecialSupport(String name, int number) { // 생성자
         super(name);
         this.number = number;
     }

@@ -1,6 +1,6 @@
 public abstract class Border extends Display {
-    protected Display display;          // Àå½ÄÀÌ °¨½Î°í ÀÖ´Â "³»¿ë¹°"À» °¡¸®Å²´Ù.
-    protected Border(Display display) { // ÀÎ½ºÅÏ½º »ı¼º½Ã¿¡ "³»¿ë¹°"À» ÀÎ¼ö·Î ÁöÁ¤
+    protected Display display;          // ì¥ì‹ì´ ê°ì‹¸ê³  ìˆëŠ” "ë‚´ìš©ë¬¼"ì„ ê°€ë¦¬í‚¨ë‹¤.
+    protected Border(Display display) { // ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ì‹œì— "ë‚´ìš©ë¬¼"ì„ ì¸ìˆ˜ë¡œ ì§€ì •
         this.display = display;
     }
 }

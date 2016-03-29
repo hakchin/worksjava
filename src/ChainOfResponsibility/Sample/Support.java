@@ -8,7 +8,7 @@ public abstract class Support {
         this.next = next;
         return next;
     }
-    public final void support(Trouble trouble) {  // 트러블 해결 순서
+    public final void support(Trouble trouble) { // 트러블 해결 순서
         if (resolve(trouble)) {
             done(trouble);
         } else if (next != null) {

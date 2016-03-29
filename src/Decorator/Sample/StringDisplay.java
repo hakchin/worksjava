@@ -1,15 +1,15 @@
 public class StringDisplay extends Display {
-    private String string;                          // Ç¥½Ã ¹®ÀÚ¿­
-    public StringDisplay(String string) {           // ÀÎ¼ö·Î Ç¥½Ã¹®ÀÚ¿­À» ÁöÁ¤
+    private String string;                          // í‘œì‹œ ë¬¸ìì—´
+    public StringDisplay(String string) {           // ì¸ìˆ˜ë¡œ í‘œì‹œë¬¸ìì—´ì„ ì§€ì •
         this.string = string;
     }
-    public int getColumns() {                       // ¹®ÀÚ¼ö
+    public int getColumns() {                       // ë¬¸ììˆ˜
         return string.getBytes().length;
     }
-    public int getRows() {                          // ÁÙ¼ö´Â 1
+    public int getRows() {                          // ì¤„ìˆ˜ëŠ” 1
         return 1;
     }
-    public String getRowText(int row) {             // row°¡ 0ÀÏ¶§¸¸ ¹İÈ¯ÇÑ´Ù.
+    public String getRowText(int row) {             // rowê°€ 0ì¼ë•Œë§Œ ë°˜í™˜í•œë‹¤.
         if (row == 0) {
             return string;
         } else {

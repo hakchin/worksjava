@@ -2,22 +2,22 @@ public class FullBorder extends Border {
     public FullBorder(Display display) {
         super(display);
     }
-    public int getColumns() {                   // ¹®ÀÚ¼ö´Â ³»¿ë¹°ÀÇ ¾çÂÊ¿¡ ÁÂ¿ìÀÇ Àå½Ä ¹®ÀÚºĞÀ» ´õÇÑ °Í
+    public int getColumns() {                   // ë¬¸ììˆ˜ëŠ” ë‚´ìš©ë¬¼ì˜ ì–‘ìª½ì— ì¢Œìš°ì˜ ì¥ì‹ ë¬¸ìë¶„ì„ ë”í•œ ê²ƒ
         return 1 + display.getColumns() + 1;
     }
-    public int getRows() {                      // ÁÙ¼ö´Â ³»¿ë¹°ÀÇ ÁÙ¼ö¿¡ »óÇÏÀÇ Àå½Ä¹®ÀÚºĞÀ» ´õÇÑ °Í
+    public int getRows() {                      // ì¤„ìˆ˜ëŠ” ë‚´ìš©ë¬¼ì˜ ì¤„ìˆ˜ì— ìƒí•˜ì˜ ì¥ì‹ë¬¸ìë¶„ì„ ë”í•œ ê²ƒ
         return 1 + display.getRows() + 1;
     }
-    public String getRowText(int row) {         // ÁöÁ¤ÇÑ ÁÙÀÇ ³»¿ë
-        if (row == 0) {                                                 // Àå½ÄÀÇ »ó´Ü
+    public String getRowText(int row) {         // ì§€ì •í•œ ì¤„ì˜ ë‚´ìš©
+        if (row == 0) {                                                 // ì¥ì‹ì˜ ìƒë‹¨
             return "+" + makeLine('-', display.getColumns()) + "+";
-        } else if (row == display.getRows() + 1) {                      // Àå½ÄÀÇ ÇÏ´Ü
+        } else if (row == display.getRows() + 1) {                      // ì¥ì‹ì˜ í•˜ë‹¨
             return "+" + makeLine('-', display.getColumns()) + "+";
-        } else {                                                        // ±× ¹Û¿¡
+        } else {                                                        // ê·¸ ë°–ì—
             return "|" + display.getRowText(row - 1) + "|";
         }
     }
-    private String makeLine(char ch, int count) {         // ¹®ÀÚ ch¸¦ count°³ ¿¬¼Ó½ÃÅ² ¹®ÀÚ¿­À» ¸¸µç´Ù.
+    private String makeLine(char ch, int count) {         // ë¬¸ì chë¥¼ countê°œ ì—°ì†ì‹œí‚¨ ë¬¸ìì—´ì„ ë§Œë“ ë‹¤.
         StringBuffer buf = new StringBuffer();
         for (int i = 0; i < count; i++) {
             buf.append(ch);
