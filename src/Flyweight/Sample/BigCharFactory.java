@@ -1,22 +1,22 @@
 import java.util.Hashtable;
 
 public class BigCharFactory {
-    // ÀÌ¹Ì ¸¸µé¾îÁø BigCharÀÇ ÀÎ½ºÅÏ½º¸¦ °ü¸®
+    // ì´ë¯¸ ë§Œë“¤ì–´ì§„ BigCharì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ê´€ë¦¬
     private Hashtable pool = new Hashtable();
-    // Singleton ÆĞÅÏ
+    // Singleton íŒ¨í„´
     private static BigCharFactory singleton = new BigCharFactory();
-    // »ı¼ºÀÚ
+    // ìƒì„±ì
     private BigCharFactory() {
     }
-    // À¯ÀÏÇÑ ÇÏ³ªÀÇ ÀÎ½ºÅÏ½º¸¦ ¾ò´Â´Ù.
+    // ìœ ì¼í•œ í•˜ë‚˜ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì–»ëŠ”ë‹¤.
     public static BigCharFactory getInstance() {
         return singleton;
     }
-    // BigCharÀÇ ÀÎ½ºÅÏ½º »ı¼º(°øÀ¯)
+    // BigCharì˜ ì¸ìŠ¤í„´ìŠ¤ ìƒì„±(ê³µìœ )
     public synchronized BigChar getBigChar(char charname) {
         BigChar bc = (BigChar)pool.get("" + charname);
         if (bc == null) {
-            bc = new BigChar(charname); // ¿©±â¿¡¼­ BigCharÀÇ ÀÎ½ºÅÏ½º¸¦ »ı¼º
+            bc = new BigChar(charname); // ì—¬ê¸°ì—ì„œ BigCharì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±
             pool.put("" + charname, bc);
         }
         return bc;

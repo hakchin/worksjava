@@ -1,7 +1,7 @@
 public class BigString {
-    // 'Å« ¹®ÀÚ'ÀÇ ¹è¿­
+    // 'í° ë¬¸ì'ì˜ ë°°ì—´
     private BigChar[] bigchars;
-    // »ı¼ºÀÚ
+    // ìƒì„±ì
     public BigString(String string) {
         bigchars = new BigChar[string.length()];
         BigCharFactory factory = BigCharFactory.getInstance();
@@ -9,7 +9,7 @@ public class BigString {
             bigchars[i] = factory.getBigChar(string.charAt(i));
         }
     }
-    // Ç¥½Ã
+    // í‘œì‹œ
     public void print() {
         for (int i = 0; i < bigchars.length; i++) {
             bigchars[i].print();
