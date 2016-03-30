@@ -11,14 +11,14 @@ public class Main {
         } else if (args[0].equals("html")) {
             Director director = new Director(new HTMLBuilder());
             String filename = (String)director.construct();
-            System.out.println(filename + "ÀÌ ÀÛ¼ºµÇ¾ú½À´Ï´Ù.");
+            System.out.println(filename + "ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
         } else {
             usage();
             System.exit(0);
         }
     }
     public static void usage() {
-        System.out.println("Usage: java Main plain      ÀÏ¹Ý ÅØ½ºÆ®¿¡¼­ ¹®¼­ÀÛ¼º");
-        System.out.println("Usage: java Main html       HTML ÆÄÀÏ¿¡¼­ ¹®¼­ÀÛ¼º");
+        System.out.println("Usage: java Main plain      ï¿½Ï¹ï¿½ ï¿½Ø½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û¼ï¿½");
+        System.out.println("Usage: java Main html       HTML ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û¼ï¿½");
     }
 }
