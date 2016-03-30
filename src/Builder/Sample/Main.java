@@ -11,14 +11,14 @@ public class Main {
         } else if (args[0].equals("html")) {
             Director director = new Director(new HTMLBuilder());
             String filename = (String)director.construct();
-            System.out.println(filename + "�� �ۼ��Ǿ����ϴ�.");
+            System.out.println(filename + "가 작성되었습니다.");
         } else {
             usage();
             System.exit(0);
         }
     }
     public static void usage() {
-        System.out.println("Usage: java Main plain      �Ϲ� �ؽ�Ʈ���� �����ۼ�");
-        System.out.println("Usage: java Main html       HTML ���Ͽ��� �����ۼ�");
+        System.out.println("Usage: java Main plain      일반 텍스트로 문서작성");
+        System.out.println("Usage: java Main html       HTML 파일로 문서작성");
     }
 }
