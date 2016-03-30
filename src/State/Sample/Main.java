@@ -3,7 +3,7 @@ public class Main extends Thread {
         SafeFrame frame = new SafeFrame("State Sample");
         while (true) {
             for (int hour = 0; hour < 24; hour++) {
-                frame.setClock(hour);   // ½Ã°¢ÀÇ ¼³Á¤
+                frame.setClock(hour);   // ì‹œê°ì˜ ì„¤ì •
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {

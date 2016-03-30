@@ -1,25 +1,25 @@
 public class NightState implements State {
     private static NightState singleton = new NightState();
-    private NightState() {                              // »ı¼ºÀÚ´Â private
+    private NightState() {                              // ìƒì„±ìëŠ” private
     }
-    public static State getInstance() {                 // À¯ÀÏÇÑ ÇÏ³ªÀÇ ÀÎ½ºÅÏ½º¸¦ ¾ò´Â´Ù.
+    public static State getInstance() {                 // ìœ ì¼í•œ í•˜ë‚˜ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì–»ëŠ”ë‹¤.
         return singleton;
     }
-    public void doClock(Context context, int hour) {    // ½Ã°¢¼³Á¤
+    public void doClock(Context context, int hour) {    // ì‹œê°ì„¤ì •
         if (9 <= hour && hour < 17) {
             context.changeState(DayState.getInstance());
         }
     }
-    public void doUse(Context context) {                // ±İ°í»ç¿ë
-        context.callSecurityCenter("ºñ»ó:¾ß°£ÀÇ ±İ°í»ç¿ë");
+    public void doUse(Context context) {                // ê¸ˆê³ ì‚¬ìš©
+        context.callSecurityCenter("ë¹„ìƒ:ì•¼ê°„ì˜ ê¸ˆê³ ì‚¬ìš©");
     }
-    public void doAlarm(Context context) {              // ºñ»óº§
-        context.callSecurityCenter("ºñ»óº§(¾ß°£)");
+    public void doAlarm(Context context) {              // ë¹„ìƒë²¨
+        context.callSecurityCenter("ë¹„ìƒë²¨(ì•¼ê°„)");
     }
-    public void doPhone(Context context) {              // ÀÏ¹İÅëÈ­
-        context.recordLog("¾ß°£ÀÇ ÅëÈ­³ìÀ½");
+    public void doPhone(Context context) {              // ì¼ë°˜í†µí™”
+        context.recordLog("ì•¼ê°„ì˜ í†µí™”ë…¹ìŒ");
     }
-    public String toString() {                          // ¹®ÀÚ¿­ Ç¥Çö
-        return "[¾ß°£]";
+    public String toString() {                          // ë¬¸ìì—´ í‘œí˜„
+        return "[ì•¼ê°„]";
     }
 }
