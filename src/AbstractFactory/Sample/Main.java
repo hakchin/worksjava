@@ -10,15 +10,15 @@ public class Main {
         }
         Factory factory = Factory.getFactory(args[0]);
 
-        Link joins = factory.createLink("Áß¾ÓÀÏº¸", "http://www.joins.com/");
-        Link hani = factory.createLink("ÇÑ°è·¹ ½Å¹®", "http://www.hani.co.kr/");
+        Link joins = factory.createLink("ì¤‘ì•™ì¼ë³´", "http://www.joins.com/");
+        Link hani = factory.createLink("í•œê³„ë ˆ ì‹ ë¬¸", "http://www.hani.co.kr/");
 
         Link us_yahoo = factory.createLink("Yahoo!", "http://www.yahoo.com/");
         Link kr_yahoo = factory.createLink("Yahoo!Korea", "http://www.yahoo.co.kr/");
         Link excite = factory.createLink("Excite", "http://www.excite.com/");
         Link google = factory.createLink("Google", "http://www.google.com/");
 
-        Tray traynews = factory.createTray("½Å¹®");
+        Tray traynews = factory.createTray("ì‹ ë¬¸");
         traynews.add(joins);
         traynews.add(hani);
 
@@ -26,12 +26,12 @@ public class Main {
         trayyahoo.add(us_yahoo);
         trayyahoo.add(kr_yahoo);
 
-        Tray traysearch = factory.createTray("¼­Ä¡ ¿£Áø");
+        Tray traysearch = factory.createTray("ì„œì¹˜ ì—”ì§„");
         traysearch.add(trayyahoo);
         traysearch.add(excite);
         traysearch.add(google);
 
-        Page page = factory.createPage("LinkPage", "È«±æµ¿");
+        Page page = factory.createPage("LinkPage", "í™ê¸¸ë™");
         page.add(traynews);
         page.add(traysearch);
         page.output();
