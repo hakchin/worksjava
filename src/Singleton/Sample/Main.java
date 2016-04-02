@@ -4,9 +4,9 @@ public class Main {
         Singleton obj1 = Singleton.getInstance();
         Singleton obj2 = Singleton.getInstance();
         if (obj1 == obj2) {
-            System.out.println("obj1°ú obj2´Â °°Àº ÀÎ½ºÅÏ½ºÀÔ´Ï´Ù.");
+            System.out.println("obj1ê³¼ obj2ëŠ” ê°™ì€ ì¸ìŠ¤í„´ìŠ¤ì…ë‹ˆë‹¤.");
         } else {
-            System.out.println("obj1°úobj2´Â °°Àº ÀÎ½ºÅÏ½º°¡ ¾Æ´Õ´Ï´Ù.");
+            System.out.println("obj1ê³¼obj2ëŠ” ê°™ì€ ì¸ìŠ¤í„´ìŠ¤ê°€ ì•„ë‹™ë‹ˆë‹¤.");
         }
         System.out.println("End.");
     }
