@@ -8,23 +8,23 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class DrawCanvas extends Canvas implements Drawable {
-    // ±×¸² ±×¸®´Â »ö
+    // ê·¸ë¦¼ ê·¸ë¦¬ëŠ” ìƒ‰
     private Color color = Color.red;
-    // ±×¸² ±×¸®±â¸¦ ÇÒ Á¡ÀÇ ¹İ°æ
+    // ê·¸ë¦¼ ê·¸ë¦¬ê¸°ë¥¼ í•  ì ì˜ ë°˜ê²½
     private int radius = 6;
-    // ÀÌ·Â
+    // ì´ë ¥
     private MacroCommand history;
-    // »ı¼ºÀÚ
+    // ìƒì„±ì
     public DrawCanvas(int width, int height, MacroCommand history) {
         setSize(width, height);
         setBackground(Color.white);
         this.history = history;
     }
-    // ÀÌ·Â ÀüÃ¼¸¦ ´Ù½Ã ±×¸®±â
+    // ì´ë ¥ ì „ì²´ë¥¼ ë‹¤ì‹œ ê·¸ë¦¬ê¸°
     public void paint(Graphics g) {
         history.execute();
     }
-    // ±×¸®±â
+    // ê·¸ë¦¬ê¸°
     public void draw(int x, int y) {
         Graphics g = getGraphics();
         g.setColor(color);

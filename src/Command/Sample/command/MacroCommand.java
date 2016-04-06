@@ -4,28 +4,28 @@ import java.util.Stack;
 import java.util.Iterator;
 
 public class MacroCommand implements Command {
-    // ¸í·ÉÀÇ ÁıÇÕ
+    // ëª…ë ¹ì˜ ì§‘í•©
     private Stack commands = new Stack();
-    // ½ÇÇà
+    // ì‹¤í–‰
     public void execute() {
         Iterator it = commands.iterator();
         while (it.hasNext()) {
             ((Command)it.next()).execute();
         }
     }
-    // Ãß°¡
+    // ì¶”ê°€
     public void append(Command cmd) {
         if (cmd != this) {
             commands.push(cmd);
         }
     }
-    // ÃÖÈÄÀÇ ¸í·ÉÀ» »èÁ¦
+    // ìµœí›„ì˜ ëª…ë ¹ì„ ì‚­ì œ
     public void undo() {
         if (!commands.empty()) {
             commands.pop();
         }
     }
-    // ÀüºÎ »èÁ¦
+    // ì „ë¶€ ì‚­ì œ
     public void clear() {
         commands.clear();
     }
