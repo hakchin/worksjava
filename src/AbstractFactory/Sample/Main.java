@@ -11,7 +11,7 @@ public class Main {
         Factory factory = Factory.getFactory(args[0]);
 
         Link joins = factory.createLink("중앙일보", "http://www.joins.com/");
-        Link hani = factory.createLink("한계레 신문", "http://www.hani.co.kr/");
+        Link hani = factory.createLink("한계레신문", "http://www.hani.co.kr/");
 
         Link us_yahoo = factory.createLink("Yahoo!", "http://www.yahoo.com/");
         Link kr_yahoo = factory.createLink("Yahoo!Korea", "http://www.yahoo.co.kr/");
