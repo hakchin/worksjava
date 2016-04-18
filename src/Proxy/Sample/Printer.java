@@ -1,23 +1,23 @@
 public class Printer implements Printable {
     private String name;
     public Printer() {
-        heavyJob("PrinterÀÇ ÀÎ½ºÅÏ½º¸¦ »ı¼ºÁß");
+        heavyJob("Printerì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±ì¤‘");
     }
-    public Printer(String name) {                   // »ı¼ºÀÚ
+    public Printer(String name) {                   // ìƒì„±ì
         this.name = name;
-        heavyJob("PrinterÀÇ ÀÎ½ºÅÏ½º(" + name + ")¸¦ »ı¼ºÁß");
+        heavyJob("Printerì˜ ì¸ìŠ¤í„´ìŠ¤(" + name + ")ë¥¼ ìƒì„±ì¤‘");
     }
-    public void setPrinterName(String name) {       // ÀÌ¸§ÀÇ ¼³Á¤
+    public void setPrinterName(String name) {       // ì´ë¦„ì˜ ì„¤ì •
         this.name = name;
     }
-    public String getPrinterName() {                // ÀÌ¸§ÀÇ Ãëµæ
+    public String getPrinterName() {                // ì´ë¦„ì˜ ì·¨ë“
         return name;
     }
-    public void print(String string) {              // ÀÌ¸§À» ºÙ¿©¼­ Ç¥½Ã
+    public void print(String string) {              // ì´ë¦„ì„ ë¶™ì—¬ì„œ í‘œì‹œ
         System.out.println("=== " + name + " ===");
         System.out.println(string);
     }
-    private void heavyJob(String msg) {             // ¹«°Å¿î ÀÛ¾÷
+    private void heavyJob(String msg) {             // ë¬´ê±°ìš´ ì‘ì—…
         System.out.print(msg);
         for (int i = 0; i < 5; i++) {
             try {
@@ -26,6 +26,6 @@ public class Printer implements Printable {
             }
             System.out.print(".");
         }
-        System.out.println("¿Ï·á.");
+        System.out.println("ì™„ë£Œ.");
     }
 }
