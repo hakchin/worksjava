@@ -5,7 +5,7 @@ public class Director {
     }
     public Object construct() {               // 문서 구축
         builder.makeTitle("Greeting");        // 타이틀
-        builder.makeString("아침과 낮에");    // 문자열
+        builder.makeString("아침과 낮에");       // 문자열
         builder.makeItems(new String[]{       // 항목
             "좋은 아침입니다.",
             "안녕하세요",
