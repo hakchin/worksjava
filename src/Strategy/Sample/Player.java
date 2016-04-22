@@ -4,11 +4,11 @@ public class Player {
     private int wincount;
     private int losecount;
     private int gamecount;
-    public Player(String name, Strategy strategy) {         // 이름과 전력을 전수 받는다.
+    public Player(String name, Strategy strategy) { // 이름과 전력을 전수 받는다.
         this.name = name;
         this.strategy = strategy;
     }
-    public Hand nextHand() {                                // 전략의 지시를 받는다.
+    public Hand nextHand() {                        // 전략의 지시를 받는다.
         return strategy.nextHand();
     }
     public void win() {                 // 이겼다.

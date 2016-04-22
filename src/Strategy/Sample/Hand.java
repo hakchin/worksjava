@@ -17,10 +17,10 @@ public class Hand {
     public static Hand getHand(int handvalue) { // 값으로부터 인스턴스를 얻는다.
         return hand[handvalue];
     }
-    public boolean isStrongerThan(Hand h) {     // this가 h보다 강할 때true
+    public boolean isStrongerThan(Hand h) {     // this가 h보다 강할 때 true
         return fight(h) == 1;
     }
-    public boolean isWeakerThan(Hand h) {       // this가h보다 약할 때true
+    public boolean isWeakerThan(Hand h) {       // this가 h보다 약할 때 true
         return fight(h) == -1;
     }
     private int fight(Hand h) {                 // 무승부는 0, this가 이기면1, h가 이기면 -1
