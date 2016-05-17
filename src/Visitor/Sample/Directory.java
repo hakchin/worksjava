@@ -2,15 +2,15 @@ import java.util.Iterator;
 import java.util.Vector;
 
 public class Directory extends Entry {
-    private String name;                    // µğ·ºÅä¸®ÀÇ ÀÌ¸§
-    private Vector dir = new Vector();      // µğ·ºÅä¸® ¿£Åä¸®ÀÇ ÁıÇÕ
-    public Directory(String name) {         // »ı¼ºÀÚ
+    private String name;                    // ë””ë ‰í† ë¦¬ì˜ ì´ë¦„
+    private Vector dir = new Vector();      // ë””ë ‰í† ë¦¬ ì—”í† ë¦¬ì˜ ì§‘í•©
+    public Directory(String name) {         // ìƒì„±ì
         this.name = name;
     }
-    public String getName() {               // ÀÌ¸§À» ¾ò´Â´Ù.
+    public String getName() {               // ì´ë¦„ì„ ì–»ëŠ”ë‹¤.
         return name;
     }
-    public int getSize() {                  // »çÀÌÁî¸¦ ¾ò´Â´Ù.
+    public int getSize() {                  // ì‚¬ì´ì¦ˆë¥¼ ì–»ëŠ”ë‹¤.
         int size = 0;
         Iterator it = dir.iterator();
         while (it.hasNext()) {
@@ -19,14 +19,14 @@ public class Directory extends Entry {
         }
         return size;
     }
-    public Entry add(Entry entry) {         // ¿£Æ®¸®ÀÇ Ãß°¡
+    public Entry add(Entry entry) {         // ì—”íŠ¸ë¦¬ì˜ ì¶”ê°€
         dir.add(entry);
         return this;
     }
-    public Iterator iterator() {      // IteratorÀÇ »ı¼º
+    public Iterator iterator() {            // Iteratorì˜ ìƒì„±
         return dir.iterator();
     }
-    public void accept(Visitor v) {         // ¹æ¹®ÀÚ¸¦ ¹Ş¾ÆµéÀÓ
+    public void accept(Visitor v) {         // ë°©ë¬¸ìë¥¼ ë°›ì•„ë“¤ì„
         v.visit(this);
     }
 }

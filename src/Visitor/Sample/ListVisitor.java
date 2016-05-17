@@ -1,11 +1,11 @@
 import java.util.Iterator;
 
 public class ListVisitor extends Visitor {
-    private String currentdir = "";                         // ÇöÀç ÁÖ¸ñÇÏ°í ÀÖ´Â µğ·ºÅä¸®¸í
-    public void visit(File file) {                  // ÆÄÀÏÀ» ¹æ¹®ÇßÀ» ¶§ È£ÃâµÈ´Ù.
+    private String currentdir = "";                 // í˜„ì¬ ì£¼ëª©í•˜ê³  ìˆëŠ” ë””ë ‰í† ë¦¬ëª…
+    public void visit(File file) {                  // íŒŒì¼ì„ ë°©ë¬¸í–ˆì„ ë•Œ í˜¸ì¶œëœë‹¤.
         System.out.println(currentdir + "/" + file);
     }
-    public void visit(Directory directory) {   // µğ·ºÅä¸®¸¦ ¹æ¹®ÇßÀ» ¶§ È£ÃâµÈ´Ù.
+    public void visit(Directory directory) {        // ë””ë ‰í† ë¦¬ë¥¼ ë°©ë¬¸í–ˆì„ ë•Œ í˜¸ì¶œëœë‹¤.
         System.out.println(currentdir + "/" + directory);
         String savedir = currentdir;
         currentdir = currentdir + "/" + directory.getName();

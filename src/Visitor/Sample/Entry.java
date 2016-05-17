@@ -1,15 +1,15 @@
 import java.util.Iterator;
 
 public abstract class Entry implements Acceptor {
-    public abstract String getName();                                   // ÀÌ¸§À» ¾ò´Â´Ù.
-    public abstract int getSize();                                      // »çÀÌÁî¸¦ ¾ò´Â´Ù.
-    public Entry add(Entry entry) throws FileTreatmentException {       // ¿£Æ®¸®¸¦ Ãß°¡
+    public abstract String getName();                                   // ì´ë¦„ì„ ì–»ëŠ”ë‹¤.
+    public abstract int getSize();                                      // ì‚¬ì´ì¦ˆë¥¼ ì–»ëŠ”ë‹¤.
+    public Entry add(Entry entry) throws FileTreatmentException {       // ì—”íŠ¸ë¦¬ë¥¼ ì¶”ê°€
         throw new FileTreatmentException();
     }
-    public Iterator iterator() throws FileTreatmentException {    // IteratorÀÇ »ı¼º
+    public Iterator iterator() throws FileTreatmentException {          // Iteratorì˜ ìƒì„±
         throw new FileTreatmentException();
     }
-    public String toString() {                                          // ¹®ÀÚ¿­ Ç¥Çö
+    public String toString() {                                          // ë¬¸ìì—´ í‘œí˜„
         return getName() + " (" + getSize() + ")";
     }
 }
